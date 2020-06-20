@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800;900&display=swap');
+
+/* For debugging 🐞*/
+/* body * {
+    border: 1px solid #3e3e3e;
+} */
+
+/* Removing unnecessary margins 🧨 */
+body,
+body * {
+    margin: 0;
+}
+
+/* Legacy styling for older browsers (ensures each of these end up as block and on their own line instead of inline-block. 🧐See @ bottom of page:
+ https://www.internetingishard.com/html-and-css/semantic-html/ */
+section, article, aside, footer, header, nav {
+    display: block;
+}
+
+h1, h2, h3, h4, h4, h5, h6, a {
+    font-family: 'Raleway', sans-serif;
+    color: #343434;
+}
+
+h1#page-title {
+    font-size: 48px;
+    margin: 24px;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 12px 24px;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 12px 24px;
+}
+
+p {
+    font-family: 'Indie flower', sans-serif;
+    color: #343434;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 12px 24px;
+}
+
+a {
+    font-family: 'Indie flower', sans-serif;
+    font-size: 18px;
+    /* font-weight: bolder; */
+    color: #232323;
+    text-decoration: none;
+}
+
+nav.nav-bar {
+    display: none;
+}
+
+div.main-container {
+    min-height: 100vh;
+}
+
+footer {
+    width: 100vw;
+    text-align: right;
+}
+
+footer p {
+    color: #bbb;
+}
+
+.about-img-mob-only {
+    height: 30vh;
+    width: calc(100vw - 10px);
+    object-fit: cover;
+    object-position: center;
+    border: solid 5px black;
+}
+
+
+div#contact-page-container {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.45), 
+        rgba(255, 255, 255, 0.45)
+      ), url('images/map.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+div.work-item-background {
+    width: 100vw;
+    height: 350px;
+    background: linear-gradient(
+        rgba(153, 197, 229, 0.75), 
+        rgba(153, 197, 229, 0.75)
+      ), url('images/paints.jpg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* ------- other colour schemes -------- */
+
+    /* background colours: */
+        /* 
+        rgba(229, 153, 189, 0.75)
+        rgba(162, 229, 153, 0.75)
+        rgba(153, 197, 229, 0.75) 
+        */
+    
+        /* text colours: */
+        /* 
+        rgba(3, 105, 35, 1)
+        rgba(211, 20, 145, 1) 
+        */
+
+/* -------------------------------------- */
+
+div.work-item-background h5 {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 48px;
+    margin: 8px 12px;
+}
+
+img.work-item-img {
+    width: calc(100vw - 10px);
+    height: auto;
+    border: solid 5px #333;
+}
+
+div.work-item-text h4 {
+    color: rgba(5, 105, 153, 1);
+}
+
+div#homepage-img-div {
+    height: 60vh;
+    width: 100vw;
+}
+
+img#homepage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#homepage-content h1 {
+    margin: 0;
+    position: absolute;
+    top: calc(60vh - 60px);
+    width: 100vw;
+    
+    font-weight: 900;
+    text-align: center;
+    font-size: 240px;
+    color: #212121;
+    
+    /* ❗changing line-height means you need to change the top position calc ❗️ */
+    line-height: 120px; 
+}
+
+div#homepage-content {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#homepage-text {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#homepage-text h2 {
+    margin: 0;
+}
+
+#homepage-location-text {
+    display: none;
+}
+
+@media (min-width: 550px) {
+
+    /* h1#page-title {
+        margin: 64px 0 0 48px;
+        font-size: 120px;
+    } */
+
+    #homepage-nav-bar div#menu-right a {
+        color: #fff;
+        /* font-weight: bold; */
+    }
+
+    h1#page-title {
+        font-size: 96px;
+        margin: 84px 48px 48px 48px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    nav.nav-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 48px;
+        /* padding-left: 24px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div#menu-left {
+        padding-left: 24px;
+    }
+
+    div#menu-right {
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    div.main-container {
+        display: flex;
+      }
+
+    div#about-page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.65), 
+            rgba(255, 255, 255, 0.65)
+          ), url('images/computer.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .about-img-mob-only {
+        display: none;
+    }
+
+    div#about-content p {
+        margin: 12px;
+    }
+
+    div#about-content,
+    div#contact-content {
+        margin: 0 48px 24px 48px;
+    }
+
+    div#work-page-container {
+        display: block;
+    }
+  
+    div.work-item-background {
+        height: 48vh;
+        align-items: center;
+    }
+    
+    img.work-item-img {
+        width: 66vw;
+    }
+    
+    div.work-item-background h5 {
+        align-self: flex-end;
+        margin: 12px 48px;
+    }
+
+    div.work-item-text {
+        margin: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#homepage-img-div {
+        height: 70vh;
+    }
+
+    div#homepage-content {
+        flex-direction: row;
+        height: 30vh;
+        align-items: flex-end;
+        justify-content: center;
+        margin-left: 24px;
+    }
+
+    div#homepage-content h1 {
+        position: unset;
+        width: auto;
+        margin-right: 36px;
+        /* resetting the line height cos I don't need it to calculate the offset at this screen width */
+        line-height: normal;
+    }
+
+    div#homepage-text {
+        justify-content: flex-end;
+        margin-bottom: 40px;
+        text-align: left;
+      }
+
+    div#homepage-text p {
+        max-width: 450px;
+        margin: 12px 0;
+        font-weight: normal;
+        line-height: 40px;
+        font-size: 36px;
+    }
+
+    img.about-img-mob-only {
+        display: none;
+    }
+
+    div#about-content {
+        font-size: 24px;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    /* h1 {
+        font-size: 120px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: normal;
+        margin: 24px 0;
+    } */
+
+    #homepage-nav-bar #menu-right a {
+        color: #fff;
+    }
+
+    div.main-container,
+    div#about-page-container {
+        flex-direction: row;
+    }
+
+    h1#page-title,
+    div#about-content,
+    div#contact-content {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin: 84px 64px;
+    }
+
+    div#about-content,
+    div#contact-content {
+        text-align: right;
+        max-width: 40vw;
+    }
+
+    div#homepage-container {
+        height: 100vh;
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    div#homepage-img-div {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        height: 100vh;
+        max-width: 50vw;
+        min-width: 50vw;
+    }
+
+    div#homepage-content {
+        height: 100vh;
+        max-width: 50vw;
+        min-width: 50vw;
+        padding-left: 64px;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    div#homepage-content h1 {
+        margin-left: 52px;
+    }
+
+    div#homepage-text {
+        margin-left: 64px;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (min-width: 1080px) {
+
+    div#work-page-container {
+        background: linear-gradient( rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65) ), url('images/paints.jpg');
+        background-position: top;
+        background-size: cover;
+        display: inline-block;
+    }
+
+    div.work-item-background {
+        background: rgba(153, 197, 229, 0.5);
+    }
+
+
+    div.work-item-div {
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        height: 80vh;
+        width: 100vw;
+      }
+      
+
+    img.work-item-img {
+      /* width: 66vw; */
+        grid-column: 2/7;
+        grid-row: 3/8;
+        width: calc(100% - 10px);
+        height: auto;
+        z-index: 50;
+
+    }
+
+    div.work-item-background {
+        height: auto;
+        width: 100vw;
+
+        grid-row: 2/12;
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10,1fr);
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    div.work-item-background h5 {
+        grid-column: 2/6;
+        grid-row: 9/11;
+        align-self: flex-start;
+    }
+  
+  div.work-item-background {
+    /* width: 100vw; */
+    /* height: 350px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+  }
+
+  div.work-item-text {
+        grid-row: 1/13;
+        grid-column: 5/13;
+        background-color: #fff;
+        border: solid 5px black;
+        text-align: right;
+        margin-left: 50px;
+  }
+
+  div.work-item-text p {
+        margin-left: 10vw;   
+  }
+}
