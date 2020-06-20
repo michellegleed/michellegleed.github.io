@@ -76,7 +76,7 @@ nav.active {
 }
 
 nav.active a,
-nav.active i {
+nav.active div.menu-icon i {
     color: #fff;
 }
 
@@ -101,6 +101,9 @@ div#homepage-menu-icon i {
     color: #fff;
 }
 
+i.inactive {
+    display: none;
+}
 
 div.main-container {
     min-height: 100vh;
@@ -280,7 +283,7 @@ div#homepage-content {
 
 @media (min-width: 550px) {
 
-    div#mob-menu-icon {
+    div.menu-icon {
         display: none;
     }
 

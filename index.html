@@ -13,19 +13,23 @@
 <body>
 
     <header>
-    <div id="homepage-menu-icon" class="menu-icon"><i class="fas fa-bars"></i></div>
-    <div id="close-menu-icon"><i class="fas fa-times"></i></div>
-    <nav id="homepage-nav-bar" class="nav-bar">
-        <div id="menu-left">
-            <a href="index.html">MG</a>
+        <div id="homepage-menu-icon" class="menu-icon">
+            <i id="hamburger-icon" class="fas fa-bars active"></i>
         </div>
-        <div id="menu-right">
-            <a href="about.html">About</a>
-            <a href="work.html">My Work</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-</header>
+        <nav id="homepage-nav-bar" class="nav-bar">
+            <div class="menu-icon">
+                <i id="close-icon" class="fas fa-times"></i>
+            </div>
+            <div id="menu-left">
+                <a href="index.html">MG</a>
+            </div>
+            <div id="menu-right">
+                <a href="about.html">About</a>
+                <a href="work.html">My Work</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
 
     <div id="homepage-container">
 
@@ -49,6 +53,8 @@
     <footer>
         <p>Made by Michelle &copy 2020</p>
     </footer>
+
+    <script src="menu.js"></script>
 </body>
 
 </html>
