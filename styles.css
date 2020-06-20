@@ -45,18 +45,12 @@ h4 {
 }
 
 p {
-    /* font-family: 'Indie flower', sans-serif;
-    color: #343434;
-    font-size: 16px; */
     font-weight: normal;
     margin: 12px 24px;
 }
 
 a {
-    font-family: 'Indie flower', sans-serif;
     font-size: 18px;
-    /* font-weight: bolder; */
-    color: #232323;
     text-decoration: none;
 }
 
@@ -67,6 +61,46 @@ label, button {
 nav.nav-bar {
     display: none;
 }
+
+nav.active {
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    background-color: rgba(0,0,0,.75);
+}
+
+nav.active a,
+nav.active i {
+    color: #fff;
+}
+
+div.menu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.menu-icon i {
+    color: #232323;
+    padding-right: 24px;
+    font-size: 32px;
+}
+
+div#homepage-menu-icon i {
+    color: #fff;
+}
+
 
 div.main-container {
     min-height: 100vh;
@@ -137,7 +171,6 @@ div.form-item button {
     padding-top: 6px;
     border: solid 3px #232323;
     border-radius: 5px;
-    /* border-radius: 10px; */
     background-color: rgba(255,255,255,.8);
     align-self: center;
 }
@@ -241,20 +274,18 @@ div#homepage-content {
     font-size: 20px;
 }
 
-#homepage-location-text {
+/* #homepage-location-text {
     display: none;
-}
+} */
 
 @media (min-width: 550px) {
 
-    /* h1#page-title {
-        margin: 64px 0 0 48px;
-        font-size: 120px;
-    } */
+    div#mob-menu-icon {
+        display: none;
+    }
 
     #homepage-nav-bar div#menu-right a {
         color: #fff;
-        /* font-weight: bold; */
     }
 
     h1#page-title {
@@ -272,7 +303,6 @@ div#homepage-content {
         left: 0;
         width: 100vw;
         height: 48px;
-        /* padding-left: 24px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
