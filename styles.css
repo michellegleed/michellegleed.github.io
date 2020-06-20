@@ -437,7 +437,8 @@ div.form-item {
     }
 
     div.main-container,
-    div#about-page-container {
+    div#about-page-container,
+    div#contact-page-container {
         flex-direction: row;
     }
 
@@ -449,10 +450,18 @@ div.form-item {
         margin: 84px 64px;
     }
 
-    div#about-content,
-    div#contact-content {
+    div#about-content {
         text-align: right;
         max-width: 40vw;
+    }
+
+    div#contact-content {
+        max-width: 60vw;
+        margin: 84px 64px 24px 64px;
+    }
+
+    form#contact-form {
+        margin: 0;
     }
 
     div#homepage-container {
