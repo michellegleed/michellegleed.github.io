@@ -141,6 +141,41 @@ footer p {
     color: #bbb;
 }
 
+/* div#about-content p:first-child {
+    width: 50vw;
+    margin-bottom: -24px;
+} */
+
+figure.about-image-figure {
+    height: calc(30vh + 10px);
+}
+
+figure.about-image-figure figcaption {
+    position: relative;
+    bottom: 72px;
+    width: calc(100vw - 10px);
+    z-index: 100;
+    font-size: 56px;
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+}
+
+figcaption#profile-img-caption {
+    left: 16px;
+    text-align: left;
+}
+
+figcaption#dog-img-caption {
+    right: 16px;
+    text-align: right;
+}
+
+/* figure {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -24px;
+} */
+
 .about-img-mob-only {
     height: 30vh;
     width: calc(100vw - 10px);
@@ -149,25 +184,21 @@ footer p {
     border: solid 5px black;
 }
 
-figcaption {
-    position: relative;
-    bottom: 72px;
-    width: 50vw;
-    z-index: 100;
-    font-size: 56px;
+.about-img-mob-only#dog {
+    object-position: 0 -20px;
+}
+
+
+/* figcaption {
     font-family: 'raleway', sans-serif;
     font-weight: 700;
-}
+    font-size: 36px;
+    align-self: flex-end;
+    margin-bottom: -10px;
+    padding-right: 24px;
+    z-index: 100;
+} */
 
-figcaption#profile-img-caption {
-    left: 24px;
-    text-align: left;
-}
-
-figcaption#dog-img-caption {
-    right: 24px;
-    text-align: right;
-}
 
 
 div#contact-page-container {
@@ -377,7 +408,7 @@ div#homepage-content {
     div#menu-left a,
     div#menu-right a {
     font-size: 20px;
-}
+    }
 
     div.main-container {
         display: flex;
@@ -395,7 +426,7 @@ div#homepage-content {
         background-size: cover;
     }
 
-    .about-img-mob-only {
+    figure.about-image-figure {
         display: none;
     }
 
