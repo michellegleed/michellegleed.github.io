@@ -105,6 +105,29 @@ i.inactive {
     display: none;
 }
 
+div#menu-left,
+div#menu-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#menu-left {
+    height: 25vh;
+    justify-content: center;
+}
+
+div#menu-right {
+    height: 40vh;
+    justify-content: space-between;
+    /* font-size: 24px; */
+}
+
+div#menu-left a,
+div#menu-right a {
+    font-size: 24px;
+}
+
 div.main-container {
     min-height: 100vh;
 }
@@ -221,6 +244,8 @@ img.work-item-img {
     width: calc(100vw - 10px);
     height: auto;
     border: solid 5px #333;
+    max-width: 400px;
+    align-self: center;
 }
 
 div.work-item-text h4 {
@@ -289,6 +314,7 @@ div#homepage-content {
 
     #homepage-nav-bar div#menu-right a {
         color: #fff;
+        font-weight: 900;
     }
 
     h1#page-title {
@@ -311,15 +337,26 @@ div#homepage-content {
         align-items: center;
     }
 
+    div#menu-left,
+    div#menu-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     div#menu-left {
         padding-left: 24px;
     }
 
     div#menu-right {
         width: 50vw;
-        display: flex;
         justify-content: space-around;
     }
+
+    div#menu-left a,
+    div#menu-right a {
+    font-size: 20px;
+}
 
     div.main-container {
         display: flex;
@@ -380,6 +417,7 @@ div.form-item {
     
     img.work-item-img {
         width: 66vw;
+        max-width: 66vw;
     }
     
     div.work-item-background h5 {
@@ -446,6 +484,11 @@ div.form-item {
     div#homepage-text p {
         line-height: 28px;
         font-size: 24px;
+    }
+
+    div.work-item-background {
+        height: 64vw;
+        max-height: 600px;
     }
 }
 
@@ -544,11 +587,6 @@ div.form-item {
         display: inline-block;
     }
 
-    div.work-item-background {
-        background: rgba(153, 197, 229, 0.5);
-    }
-
-
     div.work-item-div {
         display: grid;
         grid-template-rows: repeat(12, 1fr);
@@ -557,6 +595,20 @@ div.form-item {
         width: 100vw;
       }
       
+    div.work-item-background {
+        height: auto;
+        width: 100vw;
+
+        background: rgba(153, 197, 229, 0.5);
+
+        grid-row: 2/12;
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10,1fr);
+        justify-content: center;
+        align-items: flex-start;
+    }
 
     img.work-item-img {
       /* width: 66vw; */
@@ -568,44 +620,48 @@ div.form-item {
 
     }
 
-    div.work-item-background {
-        height: auto;
-        width: 100vw;
-
-        grid-row: 2/12;
-        grid-column: 1/13;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(10,1fr);
-        justify-content: center;
-        align-items: flex-start;
-    }
-
     div.work-item-background h5 {
         grid-column: 2/6;
         grid-row: 9/11;
         align-self: flex-start;
     }
   
-  div.work-item-background {
-    /* width: 100vw; */
-    /* height: 350px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: flex-end; */
-    /* align-items: flex-end; */
-  }
+    div.work-item-background {
+        /* width: 100vw; */
+        /* height: 350px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: flex-end; */
+        /* align-items: flex-end; */
+    }
 
-  div.work-item-text {
+    div.work-item-text {
         grid-row: 1/13;
         grid-column: 5/13;
         background-color: #fff;
         border: solid 5px black;
         text-align: right;
         margin-left: 50px;
-  }
 
-  div.work-item-text p {
-        margin-left: 10vw;   
-  }
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    div.work-item-text h2 {
+        grid-row: 1/2;
+        grid-column: 4/8;
+    }  
+    
+    div.work-item-text h4 {
+        grid-row: 2/3;
+        grid-column: 4/8;
+    }
+
+    div.work-item-text p {
+        grid-row: 4/8;
+        grid-column: 3/8;
+        margin: 12px 24px 12px 0;
+    }
+  
 }
