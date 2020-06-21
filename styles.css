@@ -149,6 +149,27 @@ footer p {
     border: solid 5px black;
 }
 
+figcaption {
+    position: relative;
+    bottom: 72px;
+    width: 50vw;
+    z-index: 100;
+    font-size: 56px;
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+}
+
+figcaption#profile-img-caption {
+    left: 24px;
+    text-align: left;
+}
+
+figcaption#dog-img-caption {
+    right: 24px;
+    text-align: right;
+}
+
+
 div#contact-page-container {
     background: linear-gradient(
         rgba(255, 255, 255, 0.45), 
