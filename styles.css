@@ -219,6 +219,7 @@ div#contact-page-container {
 
 div#contact-page-container h1 {
     width: 50vw;
+    max-width: 540px;
     margin-bottom: 0;
 }
 
