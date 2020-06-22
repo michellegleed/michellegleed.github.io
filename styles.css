@@ -642,6 +642,11 @@ div.form-item {
 
 @media (min-width: 1080px) {
 
+    header {
+        z-index: 300;
+        position: absolute;
+    }
+
     div#work-page-fixed-background {
         position: fixed;
         height: 100vh;
