@@ -47,6 +47,7 @@ h4 {
 p {
     font-weight: normal;
     margin: 12px 24px;
+    font-size: 19px;
 }
 
 a {
@@ -173,11 +174,9 @@ figcaption#dog-img-caption {
     text-align: right;
 }
 
-/* figure {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: -24px;
-} */
+div#about-content p {
+    margin: 24px 24px;
+}
 
 .about-img-mob-only {
     height: 30vh;
@@ -443,6 +442,7 @@ div#homepage-content {
         left: 0;
         width: 100vw;
         height: 48px;
+        padding-top: 12px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -478,11 +478,15 @@ div#homepage-content {
         flex-direction: column;
         justify-content: flex-end;
         background: linear-gradient(
-            rgba(255, 255, 255, 0.65), 
-            rgba(255, 255, 255, 0.65)
+            rgba(255, 255, 255, 0.8), 
+            rgba(255, 255, 255, 0.8)
           ), url('images/computer.jpg');
         background-position: center;
         background-size: cover;
+    }
+
+    div#about-content {
+        font-size: 24px;
     }
 
     figure.about-image-figure {
@@ -498,23 +502,23 @@ div#homepage-content {
         margin: 0 48px 24px 48px;
     }
 
-div.form-item {
-    width: 100%;
-  }
-  
-  form#contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    div.form-item {
+        width: 100%;
+    }
+    
+    form#contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  div.form-item button {
-      margin: 32px;
-  }
-  
-  div#contact-page-container h1 {
-    margin-bottom: 12px;
-  }
+    div.form-item button {
+        margin: 32px;
+    }
+    
+    div#contact-page-container h1 {
+        margin-bottom: 12px;
+    }
   
 
     div#work-page-container {
@@ -540,6 +544,10 @@ div.form-item {
         margin: 24px;
         display: flex;
         flex-direction: column;
+    }
+
+    div.work-item-description p {
+        font-size: 20px;
     }
 
     div#homepage-img-div {
@@ -576,15 +584,6 @@ div.form-item {
         line-height: 40px;
         font-size: 36px;
     }
-
-    img.about-img-mob-only {
-        display: none;
-    }
-
-    div#about-content {
-        font-size: 24px;
-    }
-
 }
 
 @media (min-width: 550px) and (max-height: 900px) {
@@ -758,6 +757,7 @@ div.form-item {
     div.work-item-background h5 {
         grid-column: 2/6;
         grid-row: 9/11;
+        text-align: left;
         align-self: flex-start;
     }
 
@@ -791,7 +791,7 @@ div.form-item {
     }     */
     
     div.work-item-description {
-        grid-row: 4/8;
+        grid-row: 3/8;
         grid-column: 3/8;
         margin: 12px 24px;
     }
@@ -799,7 +799,7 @@ div.form-item {
     div.work-item-description p {
         margin: 0;
         margin-bottom: 18px;
-        font-size: 18px;
+        font-size: 19px;
     }
 
     
@@ -809,6 +809,11 @@ div.form-item {
 
     div#work-page-container :nth-child(2n) img.work-item-img {
         grid-column: 7/12;
+    }
+    
+    div#work-page-container :nth-child(2n) h5  {
+        grid-column: 8/12;
+        text-align: right;
     }
 
     div#work-page-container :nth-child(2n) div.work-item-text {
@@ -824,14 +829,17 @@ div.form-item {
     div#work-page-container :nth-child(2n) div.work-item-text h4 {
         grid-column: 1/5;
     }
-
-    /* div#work-page-container :nth-child(2n) div.work-item-text div.work-item-description {
-        grid-column: 3/8;
-        margin: 12px 24px 12px 0px;
-    }      */
     
     div#work-page-container :nth-child(2n) div.work-item-text div.work-item-description {
         grid-column: 1/6;
         margin: 12px 24px;
     } 
+}
+
+@media (min-width: 1080px) {
+
+    div.work-item-description p {
+        font-size: 22px;
+    }
+
 }
