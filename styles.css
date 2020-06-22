@@ -94,6 +94,7 @@ div.menu-icon {
 div.menu-icon i {
     color: #232323;
     padding-right: 24px;
+    padding-top: 24px;
     font-size: 32px;
 }
 
@@ -212,6 +213,9 @@ div#contact-page-container {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    /* space-around in case the browser doesn't support space-evenly yet */
+    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 div#contact-page-container h1 {
@@ -344,6 +348,7 @@ div.work-item-background h5 {
 img.work-item-img {
     width: calc(100vw - 10px);
     height: auto;
+    background-color: #fff;
     border: solid 5px #333;
     max-width: 400px;
     align-self: center;
@@ -394,6 +399,7 @@ div#homepage-content {
 
 #homepage-text {
     height: 35vh;
+    max-height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -559,6 +565,7 @@ div.form-item {
     div#homepage-text {
         justify-content: flex-end;
         margin-bottom: 40px;
+        max-height: unset;
         text-align: left;
       }
 
@@ -777,11 +784,24 @@ div.form-item {
         grid-column: 4/8;
     }
 
-    div.work-item-text p {
+    /* div.work-item-description {
+        grid-row: 4/8;
+        grid-column: 1/6;
+        margin: 12px 0px 12px 24px;
+    }     */
+    
+    div.work-item-description {
         grid-row: 4/8;
         grid-column: 3/8;
-        margin: 12px 24px 12px 0;
+        margin: 12px 24px;
     }
+
+    div.work-item-description p {
+        margin: 0;
+        margin-bottom: 18px;
+        font-size: 18px;
+    }
+
     
     footer {
         background-color: #fff;
@@ -805,8 +825,13 @@ div.form-item {
         grid-column: 1/5;
     }
 
-    div#work-page-container :nth-child(2n) div.work-item-text p {
+    /* div#work-page-container :nth-child(2n) div.work-item-text div.work-item-description {
+        grid-column: 3/8;
+        margin: 12px 24px 12px 0px;
+    }      */
+    
+    div#work-page-container :nth-child(2n) div.work-item-text div.work-item-description {
         grid-column: 1/6;
-        margin: 12px 0 12px 24px;
+        margin: 12px 24px;
     } 
 }

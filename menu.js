@@ -1,7 +1,7 @@
-var hamburgerIcon = document.querySelector("#hamburger-icon");
-var closeIcon = document.querySelector('#close-icon');
+const hamburgerIcon = document.querySelector("#hamburger-icon");
+const closeIcon = document.querySelector('#close-icon');
 
-var menu = document.querySelector('.nav-bar');
+const menu = document.querySelector('.nav-bar');
 
 hamburgerIcon.onclick = () => {
     console.log("hamburger was clicked");
