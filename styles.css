@@ -683,7 +683,7 @@ div.form-item {
 
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 900px) {
 
     header {
         z-index: 300;
@@ -699,15 +699,7 @@ div.form-item {
         background-size: cover;
     }
 
-    div.main-container {
-        /* min-height: 100vh; */
-       
-      }
-
     div#work-page-container {
-        /* background: linear-gradient( rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65) ), url('images/paints.jpg');
-        background-position: top;
-        background-size: cover; */
         display: inline-block;
         min-height: calc(100vh - 48px);
         z-index: 200;
@@ -725,11 +717,9 @@ div.form-item {
     div.work-item-background {
         height: auto;
         width: 100vw;
-
-        /* background: rgba(153, 197, 229, 0.5); */
-
         grid-row: 2/12;
         grid-column: 1/13;
+
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(10,1fr);
@@ -750,7 +740,6 @@ div.form-item {
     }
 
     img.work-item-img {
-      /* width: 66vw; */
         grid-column: 2/7;
         grid-row: 3/8;
         width: calc(100% - 10px);
@@ -763,15 +752,6 @@ div.form-item {
         grid-column: 2/6;
         grid-row: 9/11;
         align-self: flex-start;
-    }
-  
-    div.work-item-background {
-        /* width: 100vw; */
-        /* height: 350px; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: flex-end; */
-        /* align-items: flex-end; */
     }
 
     div.work-item-text {
@@ -812,7 +792,7 @@ div.form-item {
     }
 
     div#work-page-container :nth-child(2n) div.work-item-text {
-        grid-column: 1/8;
+        grid-column: 1/9;
         text-align: left;
         margin-right: 50px;
     }
@@ -830,37 +810,3 @@ div.form-item {
         margin: 12px 0 12px 24px;
     } 
 }
-
-
-
-/* styles.css | file:///Users/michelle/She%20Codes%20Projects%20(GIT%20backup)/Portfolio%20Site/styles.css
-
- @media (min-width: 1080px) {
-    img.work-item-img {
-      /* grid-column: 2/7;
-      grid-column: 7/12;
-    }
-    div.work-item-text {
-      /* grid-column: 5/13; 
-      /* text-align: right; 
-      /* margin-left: 50px; 
-      grid-column: 1/8;
-      text-align: left;
-      margin-right: 50px;
-    }
-    div.work-item-text h2 {
-      /* grid-column: 4/8; 
-      grid-column: 1/5;
-    }
-    div.work-item-text h4 {
-      /* grid-column: 4/8; 
-      grid-column: 1/5;
-    }
-    div.work-item-text p {
-      /* grid-column: 3/8; */
-      /* margin: 12px 24px 12px 0; 
-      grid-column: 1/6;
-      margin: 12px 0 12px 24px;
-    }
-  } */
-/* ????????????????   */
