@@ -259,15 +259,44 @@ div.work-item-div {
     margin-bottom: 64px;
 }
 
-div.work-item-background {
-    width: 100vw;
-    height: 350px;
+div#work-page-container :nth-child(2) div.work-item-background {
     background: linear-gradient(
         rgba(153, 197, 229, 0.75), 
         rgba(153, 197, 229, 0.75)
       ), url('images/paints.jpg');
     background-position: center;
     background-size: cover;
+}
+
+div#work-page-container :nth-child(3) div.work-item-background {
+    background: linear-gradient(
+        rgba(162, 229, 153, 0.75), 
+        rgba(162, 229, 153, 0.75)
+      ), url('images/paints.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+div#work-page-container :nth-child(4) div.work-item-background {
+    background: linear-gradient(
+        rgba(229, 153, 189, 0.75), 
+        rgba(229, 153, 189, 0.75)
+      ), url('images/paints.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+div.work-item-background {
+    width: 100vw;
+    height: 350px;
+    /* background: linear-gradient(
+        rgba(153, 197, 229, 0.75), 
+        rgba(153, 197, 229, 0.75)
+      ), url('images/paints.jpg');
+    background-position: center;
+    background-size: cover; */
 
     display: flex;
     flex-direction: column;
@@ -683,7 +712,7 @@ div.form-item {
         height: auto;
         width: 100vw;
 
-        background: rgba(153, 197, 229, 0.5);
+        /* background: rgba(153, 197, 229, 0.5); */
 
         grid-row: 2/12;
         grid-column: 1/13;
@@ -692,6 +721,18 @@ div.form-item {
         grid-template-rows: repeat(10,1fr);
         justify-content: center;
         align-items: flex-start;
+    }
+
+    div#work-page-container :nth-child(2) div.work-item-background {
+        background: rgba(153, 197, 229, 0.75);
+    }
+    
+    div#work-page-container :nth-child(3) div.work-item-background {
+        background: rgba(162, 229, 153, 0.75); 
+    }
+    
+    div#work-page-container :nth-child(4) div.work-item-background {
+        background: rgba(229, 153, 189, 0.75);
     }
 
     img.work-item-img {
