@@ -259,7 +259,7 @@ div.work-item-div {
     margin-bottom: 64px;
 }
 
-div#work-page-container :nth-child(2) div.work-item-background {
+div#work-page-container :nth-child(3n + 2) div.work-item-background {
     background: linear-gradient(
         rgba(153, 197, 229, 0.75), 
         rgba(153, 197, 229, 0.75)
@@ -268,7 +268,12 @@ div#work-page-container :nth-child(2) div.work-item-background {
     background-size: cover;
 }
 
-div#work-page-container :nth-child(3) div.work-item-background {
+/* div#work-page-container :nth-child(3n + 2) div.work-item-text h2, */
+div#work-page-container :nth-child(3n + 2) div.work-item-text h4 {
+    color: rgba(5, 105, 153, 1);
+}
+
+div#work-page-container :nth-child(3n + 3) div.work-item-background {
     background: linear-gradient(
         rgba(162, 229, 153, 0.75), 
         rgba(162, 229, 153, 0.75)
@@ -277,7 +282,12 @@ div#work-page-container :nth-child(3) div.work-item-background {
     background-size: cover;
 }
 
-div#work-page-container :nth-child(4) div.work-item-background {
+/* div#work-page-container :nth-child(3n + 3) div.work-item-text h2, */
+div#work-page-container :nth-child(3n + 3) div.work-item-text h4 {
+    color: rgba(3, 105, 35, 1);
+}
+
+div#work-page-container :nth-child(3n + 4) div.work-item-background {
     background: linear-gradient(
         rgba(229, 153, 189, 0.75), 
         rgba(229, 153, 189, 0.75)
@@ -286,6 +296,10 @@ div#work-page-container :nth-child(4) div.work-item-background {
     background-size: cover;
 }
 
+/* div#work-page-container :nth-child(3n + 4) div.work-item-text h2, */
+div#work-page-container :nth-child(3n + 4) div.work-item-text h4 {
+    color: rgba(211, 20, 145, 1);
+}
 
 
 div.work-item-background {
@@ -339,9 +353,9 @@ div.work-item-text {
     margin: 36px 0;
 }
 
-div.work-item-text h4 {
+/* div.work-item-text h4 {
     color: rgba(5, 105, 153, 1);
-}
+} */
 
 div#homepage-img-div {
     height: 60vh;
@@ -723,15 +737,15 @@ div.form-item {
         align-items: flex-start;
     }
 
-    div#work-page-container :nth-child(2) div.work-item-background {
+    div#work-page-container :nth-child(3n + 2) div.work-item-background {
         background: rgba(153, 197, 229, 0.75);
     }
     
-    div#work-page-container :nth-child(3) div.work-item-background {
+    div#work-page-container :nth-child(3n + 3) div.work-item-background {
         background: rgba(162, 229, 153, 0.75); 
     }
     
-    div#work-page-container :nth-child(4) div.work-item-background {
+    div#work-page-container :nth-child(3n + 4) div.work-item-background {
         background: rgba(229, 153, 189, 0.75);
     }
 
@@ -792,4 +806,61 @@ div.form-item {
     footer {
         background-color: #fff;
     }
+
+    div#work-page-container :nth-child(2n) img.work-item-img {
+        grid-column: 7/12;
+    }
+
+    div#work-page-container :nth-child(2n) div.work-item-text {
+        grid-column: 1/8;
+        text-align: left;
+        margin-right: 50px;
+    }
+
+    div#work-page-container :nth-child(2n) div.work-item-text h2 {
+        grid-column: 1/5;
+    }
+
+    div#work-page-container :nth-child(2n) div.work-item-text h4 {
+        grid-column: 1/5;
+    }
+
+    div#work-page-container :nth-child(2n) div.work-item-text p {
+        grid-column: 1/6;
+        margin: 12px 0 12px 24px;
+    } 
 }
+
+
+
+/* styles.css | file:///Users/michelle/She%20Codes%20Projects%20(GIT%20backup)/Portfolio%20Site/styles.css
+
+ @media (min-width: 1080px) {
+    img.work-item-img {
+      /* grid-column: 2/7;
+      grid-column: 7/12;
+    }
+    div.work-item-text {
+      /* grid-column: 5/13; 
+      /* text-align: right; 
+      /* margin-left: 50px; 
+      grid-column: 1/8;
+      text-align: left;
+      margin-right: 50px;
+    }
+    div.work-item-text h2 {
+      /* grid-column: 4/8; 
+      grid-column: 1/5;
+    }
+    div.work-item-text h4 {
+      /* grid-column: 4/8; 
+      grid-column: 1/5;
+    }
+    div.work-item-text p {
+      /* grid-column: 3/8; */
+      /* margin: 12px 24px 12px 0; 
+      grid-column: 1/6;
+      margin: 12px 0 12px 24px;
+    }
+  } */
+/* ????????????????   */
