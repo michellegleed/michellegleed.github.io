@@ -135,11 +135,15 @@ div#menu-left a:hover,
 div#menu-right a:hover,
 #homepage-nav-bar div#menu-left a:hover,
 #homepage-nav-bar div#menu-right a:hover,
-div#follow-links i:hover,
 div#socials a:hover,
 div.form-item button:hover {
     color: #f2237a;
     border-color: #f2237a;
+}
+
+div#follow-links i:hover {
+    color: #fff;
+    background-color: rgba(255, 0, 107, 0.8);
 }
 
 div#menu-left a:hover,
@@ -278,7 +282,7 @@ div#follow-links {
 
 
 div#follow-links i {
-    color: #343434;
+    color: #f2237a;
     font-size: 32px;
     margin: 12px;
     background-color: rgba(255,255,255,.8);
@@ -680,10 +684,6 @@ div#homepage-content {
 
     div#follow-links {
         justify-content: flex-end;
-    }
-
-    div#follow-links i {
-        border: solid 2px #343434;
     }
 
     div#follow-links i {
