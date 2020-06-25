@@ -460,7 +460,8 @@ div#homepage-content {
         display: none;
     }
 
-    #homepage-nav-bar div#menu-right a {
+    #homepage-nav-bar div#menu-right a,
+    #homepage-nav-bar div#menu-left a {
         color: #fff;
         font-weight: 900;
     }
@@ -785,6 +786,11 @@ div#homepage-content {
         position: absolute;
     }
 
+    #homepage-nav-bar div#menu-left a {
+        color: #343434;
+        font-weight: normal;
+    }
+
     div#work-page-fixed-background {
         position: fixed;
         height: 100vh;
@@ -848,7 +854,7 @@ div#homepage-content {
         grid-column: 2/6;
         grid-row: 9/11;
         text-align: left;
-        align-self: flex-start;
+        align-self: center;
     }
 
     div.work-item-text {
