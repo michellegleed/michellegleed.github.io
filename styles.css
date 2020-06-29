@@ -190,7 +190,7 @@ footer p {
 }
 
 div#about-page-container {
-    background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) ), url('images/croatia.jpeg');
+    background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) ), url('images/croatia.jpg');
     background-position: center;
     background-size: cover;
 }
