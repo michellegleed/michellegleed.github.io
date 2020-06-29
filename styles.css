@@ -541,7 +541,7 @@ div#homepage-content {
         background: linear-gradient(
             rgba(255, 255, 255, 0.75), 
             rgba(255, 255, 255, 0.75)
-          ), url('images/croatia.jpeg');
+          ), url('images/croatia.jpg');
         background-position: center;
         background-size: cover;
     }
