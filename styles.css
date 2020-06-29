@@ -719,6 +719,16 @@ div#homepage-content {
 
 @media (min-width: 900px) {
 
+    header {
+        z-index: 300;
+        position: absolute;
+    }
+
+    #homepage-nav-bar div#menu-left a {
+        color: #343434;
+        font-weight: normal;
+    }
+
     #homepage-nav-bar #menu-right a {
         color: #fff;
     }
@@ -807,20 +817,6 @@ div#homepage-content {
     div#homepage-text {
         margin-left: 64px;
         justify-content: flex-start;
-    }
-
-}
-
-@media (min-width: 900px) {
-
-    header {
-        z-index: 300;
-        position: absolute;
-    }
-
-    #homepage-nav-bar div#menu-left a {
-        color: #343434;
-        font-weight: normal;
     }
 
     div#work-page-fixed-background {
