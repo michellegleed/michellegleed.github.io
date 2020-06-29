@@ -233,8 +233,8 @@ div#contact-page-container {
     background: linear-gradient(
         rgba(255, 255, 255, 0.45), 
         rgba(255, 255, 255, 0.45)
-      ), url('images/map.jpg');
-    background-position: center;
+      ), url('images/evie-perth.jpeg');
+    background-position: right;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -336,7 +336,7 @@ div#work-page-container :nth-child(3n + 2) div.work-item-background {
     background: linear-gradient(
         rgba(153, 197, 229, 0.75), 
         rgba(153, 197, 229, 0.75)
-      ), url('images/paints.jpg');
+      ), url('images/computer.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -350,7 +350,7 @@ div#work-page-container :nth-child(3n + 3) div.work-item-background {
     background: linear-gradient(
         rgba(162, 229, 153, 0.75), 
         rgba(162, 229, 153, 0.75)
-      ), url('images/paints.jpg');
+      ), url('images/computer.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -364,7 +364,7 @@ div#work-page-container :nth-child(3n + 4) div.work-item-background {
     background: linear-gradient(
         rgba(229, 153, 189, 0.75), 
         rgba(229, 153, 189, 0.75)
-      ), url('images/paints.jpg');
+      ), url('images/computer.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -518,9 +518,9 @@ div#homepage-content {
         flex-direction: column;
         justify-content: flex-end;
         background: linear-gradient(
-            rgba(255, 255, 255, 0.8), 
-            rgba(255, 255, 255, 0.8)
-          ), url('images/computer.jpg');
+            rgba(255, 255, 255, 0.75), 
+            rgba(255, 255, 255, 0.75)
+          ), url('images/croatia.jpeg');
         background-position: center;
         background-size: cover;
     }
@@ -659,6 +659,7 @@ div#homepage-content {
 @media (min-width: 745px) {
   
   div#contact-page-container {
+    background-position: center;
     /* flex-direction: column; */
     flex-direction: row;
     flex-wrap: wrap;
@@ -796,7 +797,7 @@ div#homepage-content {
         position: fixed;
         height: 100vh;
         width: 100vw;
-        background: linear-gradient( rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65) ), url('images/paints.jpg');
+        background: linear-gradient( rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65) ), url('images/computer.jpg');
         background-position: top;
         background-size: cover;
     }
