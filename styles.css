@@ -135,6 +135,7 @@ div#menu-left a:hover,
 div#menu-right a:hover,
 #homepage-nav-bar div#menu-left a:hover,
 #homepage-nav-bar div#menu-right a:hover,
+nav.active div.menu-icon i:hover,
 div#socials a:hover,
 div.form-item button:hover {
     color: #ff0b71;
