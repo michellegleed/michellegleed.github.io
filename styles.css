@@ -31,7 +31,7 @@ p, a, label, button {
 
 h1#page-title {
     font-size: 48px;
-    margin: 24px;
+    padding: 24px;
 }
 
 h2 {
@@ -135,15 +135,16 @@ div#menu-left a:hover,
 div#menu-right a:hover,
 #homepage-nav-bar div#menu-left a:hover,
 #homepage-nav-bar div#menu-right a:hover,
+nav.active div.menu-icon i:hover,
 div#socials a:hover,
 div.form-item button:hover {
-    color: #f2237a;
-    border-color: #f2237a;
+    color: #ff0b71;
+    border-color: #ff0b71;
 }
 
 div#follow-links i:hover {
     color: #fff;
-    background-color: rgba(255, 0, 107, 0.8);
+    background-color: #ff0b71;
 }
 
 div#menu-left a:hover,
@@ -188,11 +189,21 @@ footer p {
     margin: 0;
 }
 
+div#about-page-container {
+    background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) ), url('images/croatia.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+div#about-content {
+    padding-bottom: 24px;
+}
+
 figure.about-image-figure {
     height: 210px;
 }
 
-figure.about-image-figure figcaption {
+/* figure.about-image-figure figcaption {
     position: relative;
     bottom: 72px;
     width: calc(100vw - 10px);
@@ -210,13 +221,13 @@ figcaption#profile-img-caption {
 figcaption#dog-img-caption {
     right: 16px;
     text-align: right;
-}
+} */
 
 div#about-content p {
-    margin: 24px 24px;
+    margin: 24px 24px 0 24px;
 }
 
-.about-img-mob-only {
+/* .about-img-mob-only {
     height: 200px;
     width: calc(100vw - 10px);
     object-fit: cover;
@@ -226,14 +237,14 @@ div#about-content p {
 
 .about-img-mob-only#dog {
     object-position: 0 -20px;
-}
+} */
 
 div#contact-page-container {
     background: linear-gradient(
         rgba(255, 255, 255, 0.45), 
         rgba(255, 255, 255, 0.45)
-      ), url('images/map.jpg');
-    background-position: center;
+      ), url('images/evie-perth.jpeg');
+    background-position: right;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -282,7 +293,7 @@ div#follow-links {
 
 
 div#follow-links i {
-    color: #f2237a;
+    color: #ff0b71;
     font-size: 32px;
     margin: 12px;
     background-color: rgba(255,255,255,.8);
@@ -335,7 +346,7 @@ div#work-page-container :nth-child(3n + 2) div.work-item-background {
     background: linear-gradient(
         rgba(153, 197, 229, 0.75), 
         rgba(153, 197, 229, 0.75)
-      ), url('images/paints.jpg');
+      ), url('images/computer.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -349,7 +360,7 @@ div#work-page-container :nth-child(3n + 3) div.work-item-background {
     background: linear-gradient(
         rgba(162, 229, 153, 0.75), 
         rgba(162, 229, 153, 0.75)
-      ), url('images/paints.jpg');
+      ), url('images/computer.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -363,7 +374,7 @@ div#work-page-container :nth-child(3n + 4) div.work-item-background {
     background: linear-gradient(
         rgba(229, 153, 189, 0.75), 
         rgba(229, 153, 189, 0.75)
-      ), url('images/paints.jpg');
+      ), url('images/computer.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -517,9 +528,9 @@ div#homepage-content {
         flex-direction: column;
         justify-content: flex-end;
         background: linear-gradient(
-            rgba(255, 255, 255, 0.8), 
-            rgba(255, 255, 255, 0.8)
-          ), url('images/computer.jpg');
+            rgba(255, 255, 255, 0.75), 
+            rgba(255, 255, 255, 0.75)
+          ), url('images/croatia.jpeg');
         background-position: center;
         background-size: cover;
     }
@@ -658,6 +669,7 @@ div#homepage-content {
 @media (min-width: 745px) {
   
   div#contact-page-container {
+    background-position: center;
     /* flex-direction: column; */
     flex-direction: row;
     flex-wrap: wrap;
@@ -795,7 +807,7 @@ div#homepage-content {
         position: fixed;
         height: 100vh;
         width: 100vw;
-        background: linear-gradient( rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65) ), url('images/paints.jpg');
+        background: linear-gradient( rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65) ), url('images/computer.jpg');
         background-position: top;
         background-size: cover;
     }
@@ -950,17 +962,23 @@ div#homepage-content {
     }
 
     div#follow-me {
-        margin: 56px 24px 24px 64px;
-        grid-row: 2/3;
+        margin: 0 24px 24px 64px;
+        grid-row: 3/4;
         grid-column: 1/2;
+        align-self: flex-start;
     }
 
     div#contact-content {
         max-width: 60vw;
         margin: 96px 64px 24px 64px;
+        margin: 0;
         grid-row: 1/4;
         grid-column: 2/2;
         align-self: flex-end;
+    }
+
+    form#contact-form {
+        align-items: flex-end;
     }
 
     div.form-item button {
@@ -976,4 +994,55 @@ div#homepage-content {
         justify-content: flex-start;
     }
 
+}
+
+/* for landscape-orientated phones */
+@media (max-width: 820px) and (max-height: 500px) {
+    div#homepage-container {
+        height: 100vh;
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    div#homepage-img-div {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        height: 100vh;
+        max-width: 50vw;
+        min-width: 50vw;
+    }
+
+    div#homepage-content {
+        height: 100vh;
+        max-width: 50vw;
+        min-width: 50vw;
+        padding-left: 64px;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    div#homepage-content h1 {
+        margin-left: 52px;
+        font-size: 120px;
+    }
+
+    div#homepage-text {
+        margin-left: 58px;
+        justify-content: flex-start;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin: 12px 24px;
+    }
+
+    div#homepage-text p {
+        margin: 12px 24px 12px 0;
+        line-height: 28px;
+        font-size: 20px;
+    }
 }
