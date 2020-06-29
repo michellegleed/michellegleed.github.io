@@ -277,14 +277,25 @@ div#contact-page-container h1 {
 }
 
 div#follow-me {
-    margin: 56px 24px 24px 24px;
+    /* margin: 56px 24px 24px 24px; */
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+div#follow-me h2 {
+    text-align: center;
+    font-family: "Indie flower", serif;
+    font-weight: 700;
 }
 
 div#follow-links {
     margin: 0 5vw;
     /* margin-right: calc(5vw + 12px); */
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 
     justify-content: center;
     align-items: center;
@@ -293,7 +304,7 @@ div#follow-links {
 
 
 div#follow-links i {
-    color: #ff0b71;
+    color: #343434;
     font-size: 32px;
     margin: 12px;
     background-color: rgba(255,255,255,.8);
@@ -302,7 +313,7 @@ div#follow-links i {
 }
 
 form#contact-form {
-    margin: 5vw;
+    margin: 0 5vw;
 }
 
 div.form-item {
@@ -576,7 +587,6 @@ div#homepage-content {
 
     div#follow-links {
         margin-bottom: 32px;
-        justify-content: flex-start;
     }
 
     div#follow-links i {
@@ -693,6 +703,7 @@ div#homepage-content {
         font-family: 'indie flower', sans-serif;
         font-weight: 500;
         margin-bottom: 0;
+        color: #ff0b71;
     }
 
     div#follow-links {
@@ -701,6 +712,7 @@ div#homepage-content {
 
     div#follow-links i {
         margin: 24px 12px 12px 12px;
+        color: #ff0b71;
       }
   
 }
@@ -729,6 +741,14 @@ div#homepage-content {
         text-align: right;
         max-width: 40vw;
         align-self: flex-end;
+    }
+
+    div#contact-page-container {
+        align-items: center;
+    }
+
+    div#follow-me {
+        padding-right: 5vw;
     }
 
     div#follow-links {
@@ -968,10 +988,14 @@ div#homepage-content {
         align-self: flex-start;
     }
 
+    div#follow-me h2 {
+        color: #343434;
+    }
+
     div#contact-content {
         max-width: 60vw;
-        margin: 96px 64px 24px 64px;
         margin: 0;
+        margin-right: 5vw;
         grid-row: 1/4;
         grid-column: 2/2;
         align-self: flex-end;
