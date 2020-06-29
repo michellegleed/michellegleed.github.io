@@ -31,7 +31,7 @@ p, a, label, button {
 
 h1#page-title {
     font-size: 48px;
-    margin: 24px;
+    padding: 24px;
 }
 
 h2 {
@@ -189,11 +189,21 @@ footer p {
     margin: 0;
 }
 
+div#about-page-container {
+    background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) ), url('images/croatia.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+div#about-content {
+    padding-bottom: 24px;
+}
+
 figure.about-image-figure {
     height: 210px;
 }
 
-figure.about-image-figure figcaption {
+/* figure.about-image-figure figcaption {
     position: relative;
     bottom: 72px;
     width: calc(100vw - 10px);
@@ -211,13 +221,13 @@ figcaption#profile-img-caption {
 figcaption#dog-img-caption {
     right: 16px;
     text-align: right;
-}
+} */
 
 div#about-content p {
-    margin: 24px 24px;
+    margin: 24px 24px 0 24px;
 }
 
-.about-img-mob-only {
+/* .about-img-mob-only {
     height: 200px;
     width: calc(100vw - 10px);
     object-fit: cover;
@@ -227,7 +237,7 @@ div#about-content p {
 
 .about-img-mob-only#dog {
     object-position: 0 -20px;
-}
+} */
 
 div#contact-page-container {
     background: linear-gradient(
@@ -952,17 +962,23 @@ div#homepage-content {
     }
 
     div#follow-me {
-        margin: 56px 24px 24px 64px;
-        grid-row: 2/3;
+        margin: 0 24px 24px 64px;
+        grid-row: 3/4;
         grid-column: 1/2;
+        align-self: flex-start;
     }
 
     div#contact-content {
         max-width: 60vw;
         margin: 96px 64px 24px 64px;
+        margin: 0;
         grid-row: 1/4;
         grid-column: 2/2;
         align-self: flex-end;
+    }
+
+    form#contact-form {
+        align-items: flex-end;
     }
 
     div.form-item button {
