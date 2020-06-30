@@ -679,7 +679,7 @@ div#homepage-content {
 @media (min-width: 745px) {
   
   div#contact-page-container {
-    background-position: center;
+    background-position: top;
     /* flex-direction: column; */
     flex-direction: row;
     flex-wrap: wrap;
