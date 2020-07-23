@@ -852,6 +852,23 @@ div#homepage-content {
         background: rgba(229, 153, 189, 0.75);
     }
 
+    .work-img-left-arrow,
+    .work-img-right-arrow {
+        grid-row: 5/6;
+        z-index: 5;
+        font-size: 32px;
+        color: #343434;
+    }
+
+    .work-img-left-arrow {
+        grid-column: 6/7;
+        text-align: right;
+    }
+
+    .work-img-right-arrow {
+        grid-column: 12/13;
+    }
+
     img.work-item-img {
         grid-column: 2/7;
         grid-row: 3/8;
@@ -949,6 +966,7 @@ div#homepage-content {
     div#contact-page-container {
         height: 100vh;
         padding: 0 5vw;
+        background-position-y: -30px;
 
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
