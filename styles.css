@@ -875,7 +875,8 @@ div#homepage-content {
         background-color: #fff;
         border: solid 5px black;
         text-align: right;
-        margin-left: 50px;
+        margin-left: 0;
+        margin-right: 50px;
 
         display: grid;
         grid-template-rows: repeat(12, 1fr);
@@ -884,7 +885,7 @@ div#homepage-content {
 
     div.work-item-text h2 {
         grid-row: 1/2;
-        grid-column: 4/8;
+        grid-column: 1/8;
     }  
     
     div.work-item-text h4 {
@@ -921,7 +922,8 @@ div#homepage-content {
     div#work-page-container :nth-child(2n) div.work-item-text {
         grid-column: 1/9;
         text-align: left;
-        margin-right: 50px;
+        margin-left: 50px;
+        margin-right: 0px;
     }
 
     div#work-page-container :nth-child(2n) div.work-item-text h2 {
