@@ -949,6 +949,7 @@ div#homepage-content {
     div#contact-page-container {
         height: 100vh;
         padding: 0 5vw;
+        background-position-y: -30px;
 
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
