@@ -852,6 +852,19 @@ div#homepage-content {
         background: rgba(229, 153, 189, 0.75);
     }
 
+    img.work-item-img {
+        grid-column: 2/7;
+        grid-row: 3/8;
+        z-index: 50;
+        width: calc(100% - 10px);
+        height: auto;
+        /* This is here so you can always see the date underneath the photo... */
+        max-height: 380px;
+    }
+
+
+    /* ############# Doing the arrows and dots for the img carousel!!! ########################## */
+
     .work-img-left-arrow,
     .work-img-right-arrow {
         grid-row: 5/6;
@@ -869,15 +882,40 @@ div#homepage-content {
         grid-column: 12/13;
     }
 
-    img.work-item-img {
-        grid-column: 2/7;
-        grid-row: 3/8;
-        z-index: 50;
-        width: calc(100% - 10px);
-        height: auto;
-        /* This is here so you can always see the date underneath the photo... */
-        max-height: 380px;
-    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+       /* ############# End of experiment!!! ########################## */
 
     div.work-item-background h5 {
         grid-column: 2/6;

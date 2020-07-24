@@ -39,9 +39,16 @@
 
         <div class="work-item-div">
             <div class="work-item-background">
-                <p class="work-img-left-arrow"><i class="fas fa-chevron-left"></i></p>
-                <img class="work-item-img" src="images/work-images/portfolio.png" alt="Project 1." />
-                <p class="work-img-right-arrow"><i class="fas fa-chevron-right"></i></p>
+                <p class="work-img-left-arrow" onclick="nextSlide()"><i class="fas fa-chevron-left"></i></p>
+                <img id="portfolio-slides" class="work-item-img fade" src="images/work-images/portfolio.png" alt="Project 1." />
+                <!-- <img class="work-item-img portfolio-slides fade" src="images/work-images/kid.jpeg" alt="Project 1." />
+                <img class="work-item-img portfolio-slides fade" src="images/work-images/pencils.jpg" alt="Project 1." /> -->
+                <div class="image-carousel-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                <p class="work-img-right-arrow" onclick="prevSlide()"><i class="fas fa-chevron-right"></i></p>
                 <h5>06-2020</h5>
             </div>
             <div class="work-item-text">
@@ -107,8 +114,8 @@
             <p>Made by Michelle &copy 2020</p>
         </footer>
     </div>
-x
     <script src="menu.js"></script>
+    <script src="carousel.js"></script>
 </body>
 
 </html>
