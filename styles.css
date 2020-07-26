@@ -852,14 +852,26 @@ div#homepage-content {
         background: rgba(229, 153, 189, 0.75);
     }
 
-    img.work-item-img {
+    div.image-carousel-container {
         grid-column: 2/7;
-        grid-row: 3/8;
+        grid-row: 2/9;
         z-index: 50;
         width: calc(100% - 10px);
-        height: auto;
-        /* This is here so you can always see the date underneath the photo... */
-        max-height: 380px;
+        /* height: auto; */
+        height: 100%;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img.work-item-img {
+        height: 100%;
+        width: 100%;
+        max-height: 100%;
+        justify-self: flex-start;
+        object-fit: cover;
+        object-position: center;
     }
 
 
@@ -867,19 +879,38 @@ div#homepage-content {
 
     .work-img-left-arrow,
     .work-img-right-arrow {
-        grid-row: 5/6;
+        grid-row: 2/9;
+        align-self: center;
         z-index: 5;
         font-size: 32px;
         color: #343434;
     }
 
     .work-img-left-arrow {
-        grid-column: 6/7;
+        grid-column: 1/2;
         text-align: right;
     }
 
     .work-img-right-arrow {
-        grid-column: 12/13;
+        grid-column: 7/8;
+    }
+
+    div.image-carousel-container {
+      /* grid-row: 3/8; */
+      /* height: auto; */
+      /* max-height: 380px; */
+      grid-row: 2/9;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-carousel-dots {
+        height: 0;
+        position: relative;
+        bottom: 48px;
+        text-align: center;
     }
 
     .dot {
@@ -965,7 +996,16 @@ div#homepage-content {
         background-color: #fff;
     }
 
-    div#work-page-container :nth-child(2n) img.work-item-img {
+    div#work-page-container :nth-child(2n) p.work-img-left-arrow {
+        grid-column: 6/7;
+        text-align: right;
+    }
+
+    div#work-page-container :nth-child(2n) p.work-img-right-arrow {
+        grid-column: 12/13;
+    }
+
+    div#work-page-container :nth-child(2n) div.image-carousel-container {
         grid-column: 7/12;
     }
     
