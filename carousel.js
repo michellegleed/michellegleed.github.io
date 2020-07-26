@@ -9,7 +9,7 @@ class Project {
     }
 
     nextSlide() {
-        if (this.index + 1 >= images.length) {
+        if (this.index + 1 >= this.images.length) {
             this.index = 0;
         }
         else {
@@ -25,7 +25,6 @@ class Project {
         else {
             this.index -= 1 ;
         }
-        // console.log("current this.index = ", this.index);
         this.showSlides();
     }
 
@@ -33,7 +32,6 @@ class Project {
         this.index = n;
         this.showSlides();
     }
-
 
     showSlides() {
         this.imageContainer.src = this.images[this.index];
