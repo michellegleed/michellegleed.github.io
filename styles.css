@@ -872,11 +872,8 @@ div#homepage-content {
         max-height: 100%;
         justify-self: flex-start;
         object-fit: cover;
-        object-position: center;
+        object-position: top;
     }
-
-
-    /* ############# Doing the arrows and dots for the img carousel!!! ########################## */
 
     .work-img-left-arrow,
     .work-img-right-arrow {
@@ -907,47 +904,11 @@ div#homepage-content {
       justify-content: center;
     }
 
-    .image-carousel-dots {
-        height: 0;
-        position: relative;
-        bottom: 48px;
-        text-align: center;
+    .work-item-slide-counter {
+        grid-row: 12/13;
+        grid-column: 7/13;
+        text-align: right;
     }
-
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: rgba(0,0,0,.5);
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-      
-      .active, .dot:hover {
-        background-color: rgba(0,0,0,.8)
-      }
-      
-      /* Fading animation */
-      .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-      
-      @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-      
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-
-       /* ############# End of experiment!!! ########################## */
 
     div.work-item-background h5 {
         grid-column: 2/6;
@@ -1006,6 +967,11 @@ div#homepage-content {
         grid-column: 12/13;
     }
 
+    div#work-page-container div:nth-child(2n) div.work-item-text p.work-item-slide-counter {
+        grid-column: 1/4;
+        text-align: left;
+    }
+
     div#work-page-container :nth-child(2n) div.image-carousel-container {
         grid-column: 7/12;
     }
@@ -1028,6 +994,11 @@ div#homepage-content {
 
     div#work-page-container :nth-child(2n) div.work-item-text h4 {
         grid-column: 1/5;
+    }
+    
+    div#work-page-container :nth-child(2n) div.work-item-text p {
+        grid-column: 1/6;
+        text-align: left;
     }
     
     div#work-page-container :nth-child(2n) div.work-item-text div.work-item-description {

@@ -1,9 +1,10 @@
 
 class Project {
-    constructor(imageContainer, textContainer, images, textItems) {
+    constructor(imageContainer, textContainer, counterContainer, images, textItems) {
         this.index = 0
         this.imageContainer = imageContainer;
         this.textContainer = textContainer;
+        this.counterContainer = counterContainer;
         this.images = images;
         this.textItems = textItems;
     }
@@ -36,16 +37,20 @@ class Project {
     showSlides() {
         this.imageContainer.src = this.images[this.index];
         this.textContainer.innerHTML = this.textItems[this.index];
+        let counter = `${this.index + 1}/${this.images.length}`;
+        this.counterContainer.innerHTML = counter;
     }  
 }
 
 const portfolioImageContainer = document.getElementById("portfolio-slides");
 const portfolioTextContainer = document.getElementById("portfolio-text");
+const portfolioSlideCounter = document.getElementById("portfolio-slide-counter");
 
 const portfolioSlides = [
-    "images/work-images/portfolio.png", 
-    "images/work-images/pencils.jpg", 
-    "images/work-images/kid.jpeg"
+    "images/work-images/portfolio/index.png", 
+    "images/work-images/portfolio/mob.png", 
+    "images/work-images/portfolio/ipad.png",
+    "images/work-images/portfolio/ipad2.png"
 ];
 
 const portfolioTextItems = [
@@ -53,18 +58,18 @@ const portfolioTextItems = [
     "<p>I created a simple menu for mobile-sized screens using javascript. I used CSS flexbox and CSS grid to style my pages.</p>"
 ]
 
-let portfolio = new Project(portfolioImageContainer, portfolioTextContainer, portfolioSlides, portfolioTextItems);
+let portfolio = new Project(portfolioImageContainer, portfolioTextContainer, portfolioSlideCounter, portfolioSlides, portfolioTextItems);
 
 portfolio.showSlides();
 
 
 const weatherImageContainer = document.getElementById("weather-slides");
-const weatherTextContainer = document.getElementById("weather-text");
+const weatherTextContainer = document.getElementById("weather-text");const weatherSlideCounter = document.getElementById("weather-slide-counter");
 
 const weatherSlides = [
-    "images/work-images/portfolio.png", 
-    "images/work-images/pencils.jpg", 
-    "images/work-images/kid.jpeg"
+    "images/work-images/weather/part1.png", 
+    "images/work-images/weather/part2.png", 
+    "images/work-images/weather/part3.png"
 ];
 
 const weatherTextItems = [
@@ -74,7 +79,7 @@ const weatherTextItems = [
 ];
 
 
-let weather = new Project(weatherImageContainer, weatherTextContainer, weatherSlides, weatherTextItems)
+let weather = new Project(weatherImageContainer, weatherTextContainer, weatherSlideCounter, weatherSlides, weatherTextItems)
 
 weather.showSlides()
 
