@@ -41,24 +41,26 @@
             <div class="work-item-background">
                 <p class="work-img-left-arrow" onclick="portfolio.prevSlide()"><i class="fas fa-chevron-left"></i></p>
                 <div class="image-carousel-container">
-                    <img id="portfolio-slides" class="work-item-img" src="images/work-images/portfolio.png" alt="Project 1." />
-                    <!-- <div class="image-carousel-dots">
-                        <span class="dot" onclick="portfolio.currentSlide(0)"></span>
-                        <span class="dot" onclick="portfolio.currentSlide(1)"></span>
-                        <span class="dot" onclick="portfolio.currentSlide(2)"></span>
-                    </div> -->
+                    <img id="portfolio-slides" class="work-item-img" src="images/work-images/portfolio.png"
+                        alt="Project 1." />
                 </div>
-             
+
                 <p class="work-img-right-arrow" onclick="portfolio.nextSlide()"><i class="fas fa-chevron-right"></i></p>
                 <h5>06-2020</h5>
             </div>
             <div class="work-item-text">
                 <h2>Portfolio</h2>
                 <h4>Skills: HTML, CSS</h4>
-                <div class="work-item-description" id="portfolio-text">
-                    <p></p>
+                <div class="work-item-description med-screen" id="portfolio-text">
                 </div>
-                <p class="work-item-slide-counter" id="portfolio-slide-counter">1/4</p>
+                <div class="work-item-description sml-screen">
+                    <p>The task was to create this portfolio website to showcase the projects that we complete
+                    throughout the SheCodes course. We were required to have a minimum of two pages in our website and to use media queries in this project.</p>
+                    <p>I sketched out wireframes on paper and then designed my portfolio in AdobeXD. I used several of my own photographs throughout the site. I styled the pages using Flexbox and CSS grid.</p>
+                    <p>I created a simple menu for mobile-sized screens using JavaScript.</p>
+                    <p>For larger screen sizes, I added arrow button icons and wrote JavaScript to dynamically change the images and text for each project. The script also updates the counter so the user can see which section of the project is currently in view and the number of sections left.</p>
+                </div>
+                <p class="work-item-slide-counter" id="portfolio-slide-counter"></p>
             </div>
         </div>
 
@@ -66,12 +68,8 @@
             <div class="work-item-background">
                 <p class="work-img-left-arrow" onclick="weather.prevSlide()"><i class="fas fa-chevron-left"></i></p>
                 <div class="image-carousel-container">
-                    <img id="weather-slides" class="work-item-img" src="images/work-images/kid.jpeg" alt="Weather Analyser Program." />
-                    <!-- <div class="image-carousel-dots">
-                        <span class="dot" onclick="weather.currentSlide(0)"></span>
-                        <span class="dot" onclick="weather.currentSlide(1)"></span>
-                        <span class="dot" onclick="weather.currentSlide(2)"></span>
-                    </div> -->
+                    <img id="weather-slides" class="work-item-img" src="images/work-images/kid.jpeg"
+                        alt="Weather Analyser Program." />
                 </div>
                 <p class="work-img-right-arrow" onclick="weather.nextSlide()"><i class="fas fa-chevron-right"></i></p>
                 <h5>07-2020</h5>
@@ -79,30 +77,67 @@
             <div class="work-item-text">
                 <h2>Weather Analyser Program</h2>
                 <h4>Skills: PYTHON</h4>
-                <div class="work-item-description" id="weather-text">
-                    <!-- <p>The task was to create a python program that could process a json file containing weather predictions and historical weather data.</p>
+                <div class="work-item-description med-screen" id="weather-text">
+                </div>
+                <div class="work-item-description sml-screen">
+                    <p>The task was to create a python program that could process a json file containing weather predictions and historical weather data.</p>
                     <p>Part 1 required us to extract the required predictions, format them to pass the tests, and output the formatted information into a new text file.</p>
                     <p>Part 2 required the program to output graphs of the temperature readings and the incidence of particular weather events from json data containing historical weather measurements.</p>
-                    <p>Part 3 was an optional challenge which I chose to complete. It required the program to extract certain data from the json file, format the data and generate graphs and formatted text files.</p> -->
+                    <p>Part 3 was an optional challenge which I chose to complete. It required the program to extract certain data from the json file, format the data and generate graphs and formatted text files.</p>
                 </div>
-                <p class="work-item-slide-counter" id="weather-slide-counter">1/4</p>
+                <p class="work-item-slide-counter" id="weather-slide-counter"></p>
             </div>
         </div>
 
         <div class="work-item-div">
             <div class="work-item-background">
-                <img class="work-item-img" src="images/work-images/kid.jpeg" alt="Project 2." />
+                <!-- remove "hide" class from arrows when adding a real project here. -->
+                <p class="hide work-img-left-arrow" onclick="project3.prevSlide()"><i class="fas fa-chevron-left"></i>
+                </p>
+                <div class="image-carousel-container">
+                    <img id="project3-slides" class="work-item-img" src="images/work-images/kid.jpeg"
+                        alt="Project 3." />
+                </div>
+                <!-- remove "hide" class from arrows when adding a real project here. -->
+                <p class="hide work-img-right-arrow" onclick="project3.nextSlide()"><i class="fas fa-chevron-right"></i>
+                </p>
                 <h5>Date</h5>
             </div>
             <div class="work-item-text">
                 <h2>Project #3</h2>
                 <h4>(Under Construction)</h4>
-                <div class="work-item-description">
+                <div class="work-item-description" id="project3-text">
                     <p>Description of project goes here.</p>
                 </div>
+                <p class="work-item-slide-counter" id="project3-slide-counter"></p>
             </div>
         </div>
 
+
+        <div class="work-item-div">
+            <div class="work-item-background">
+                <!-- remove "hide" class from arrows when adding a real project here. -->
+                <p class="hide work-img-left-arrow" onclick="project4.prevSlide()"><i class="fas fa-chevron-left"></i>
+                </p>
+                <div class="image-carousel-container">
+                    <img id="project4-slides" class="work-item-img" src="images/work-images/pencils.jpg"
+                        alt="Project 4." />
+                </div>
+                <!-- remove "hide" class from arrows when adding a real project here. -->
+                <p class="hide work-img-right-arrow" onclick="project4.nextSlide()"><i class="fas fa-chevron-right"></i>
+                </p>
+                <h5>Date</h5>
+            </div>
+            <div class="work-item-text">
+                <h2>Project #4</h2>
+                <h4>(Coming Soon)</h4>
+                <div class="work-item-description" id="project4-text">
+                    <p>Description of project goes here.</p>
+                </div>
+                <p class="work-item-slide-counter" id="project4-slide-counter"></p>
+            </div>
+        </div>
+        <!-- 
         <div class="work-item-div">
             <div class="work-item-background">
                 <img class="work-item-img" src="images/work-images/pencils.jpg" alt="Project 3." />
@@ -115,12 +150,13 @@
                     <p>Description of project goes here.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <footer>
             <div id="socials">
                 <a href="https://github.com/michellegleed" target="blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/michelle-g-3009b71a2/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/michelle-g-3009b71a2/" target="blank"><i
+                        class="fab fa-linkedin-in"></i></a>
             </div>
             <p>Made by Michelle &copy 2020</p>
         </footer>
