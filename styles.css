@@ -172,7 +172,7 @@ footer {
 }
 
 div#socials {
-    padding: 12px 24px;
+    padding: 12px 24px 6px 24px;
     text-align: left;
 }
   
@@ -183,6 +183,7 @@ div#socials a {
 } 
 
 footer p {
+    font-size: 16px;
     text-align: right;
     color: #bbb;
     padding: 4px 24px;
