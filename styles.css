@@ -393,7 +393,8 @@ div.work-item-background {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
 }
 
 .work-img-left-arrow,
@@ -409,6 +410,7 @@ div.work-item-background h5 {
     color: rgba(255, 255, 255, 0.64);
     font-size: 48px;
     margin: 8px 12px;
+    align-self: flex-end;
 }
 
 img.work-item-img {
@@ -647,6 +649,7 @@ div#homepage-content {
         grid-column: 6/13;
         text-align: right;
         margin: 12px 48px;
+        align-self: center;
     }
 
     div.work-item-text {
