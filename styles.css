@@ -716,6 +716,7 @@ div#homepage-content {
         height: 64vw;
         max-height: 600px;
     }
+
 }
 
 @media (min-width: 745px) {
@@ -797,6 +798,14 @@ div#homepage-content {
         margin: -12px 48px 12px 48px;
     }
   
+}
+
+@media (min-width: 745px) and (min-height: 1020px) {
+    
+    img.work-item-img {
+        max-height: 35vh;
+    }
+
 }
 
 @media (min-width: 900px) {

@@ -48,7 +48,7 @@ class Project {
             imgContainerHtml += `<img class="work-item-img" src="${imgToShow[i]}" alt="${this.name}." />`
         }
 
-        // console.log("new inner html is: ", imgContainerHtml);
+        console.log("new inner html is: ", imgContainerHtml);
 
         // this.imageContainer.src = this.images[this.index];
         this.textContainer.innerHTML = this.textItems[this.index];
