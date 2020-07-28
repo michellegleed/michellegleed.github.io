@@ -1,7 +1,8 @@
 
 class Project {
-    constructor(imageContainer, textContainer, counterContainer, images, textItems) {
-        this.index = 0
+    constructor(name, imageContainer, textContainer, counterContainer, images, textItems) {
+        this.index = 0;
+        this.name = name;
         this.imageContainer = imageContainer;
         this.textContainer = textContainer;
         this.counterContainer = counterContainer;
@@ -35,8 +36,23 @@ class Project {
     }
 
     showSlides() {
-        this.imageContainer.src = this.images[this.index];
+
+        let imgContainerHtml = ""
+        const imgToShow = this.images[this.index];
+
+        // for (let i=0; i < imgToShow.length; i++) {
+        //     imgContainerHtml += `<img class="work-item-img img-size-${imgToShow[i].size}" src="${imgToShow[i].src}" alt="${this.name}." />`
+        // }    
+        
+        for (let i=0; i < imgToShow.length; i++) {
+            imgContainerHtml += `<img class="work-item-img" src="${imgToShow[i]}" alt="${this.name}." />`
+        }
+
+        // console.log("new inner html is: ", imgContainerHtml);
+
+        // this.imageContainer.src = this.images[this.index];
         this.textContainer.innerHTML = this.textItems[this.index];
+        this.imageContainer.innerHTML = imgContainerHtml;
         let counter = `${this.index + 1}/${this.images.length}`;
         this.counterContainer.innerHTML = counter;
     }  
@@ -47,11 +63,50 @@ const portfolioTextContainer = document.getElementById("portfolio-text");
 const portfolioSlideCounter = document.getElementById("portfolio-slide-counter");
 
 const portfolioSlides = [
-    "images/work-images/portfolio/index.png", 
-    "images/work-images/portfolio/ipad.png",
-    "images/work-images/portfolio/mob2.png", 
-    "images/work-images/portfolio/ipad2.png"
+    ["images/work-images/portfolio/index.png"], 
+    ["images/work-images/portfolio/ipad-bio.png", "images/work-images/portfolio/ipad-contact.png"],
+    ["images/work-images/portfolio/mob-index.png", "images/work-images/portfolio/mob-menu.png"], 
+    ["images/work-images/portfolio/ipad-work.png", "images/work-images/portfolio/ipad-work2.png"]
 ];
+
+// const portfolioSlides = [
+//     [
+//         {
+//             size: "desktop",
+//             src: "images/work-images/portfolio/index.png"
+//         }
+//     ], 
+//     [
+//         {
+//             size: "ipad",
+//             src: "images/work-images/portfolio/ipad-bio.png"
+//         },
+//         {
+//             size: "ipad",
+//             src: "images/work-images/portfolio/ipad-contact.png"
+//         }
+//     ],
+//     [
+//         {
+//             size: "mob",
+//             src: "images/work-images/portfolio/mob-index.png"
+//         },
+//         {
+//             size: "mob",
+//             src: "images/work-images/portfolio/mob-menu.png"
+//         }
+//     ],
+//     [
+//         {
+//             size: "ipad",
+//             src: "images/work-images/portfolio/ipad-work.png"
+//         },
+//         {
+//             size: "ipad",
+//             src: "images/work-images/portfolio/ipad-work2.png"
+//         },
+//     ]
+// ];
 
 const portfolioTextItems = [
     "<p>The task was to create this portfolio website to showcase the projects that we complete throughout the SheCodes course. We were required to have a minimum of two pages in our website and to use media queries in this project.</p>",
@@ -60,7 +115,7 @@ const portfolioTextItems = [
     "<p>I added arrow button icons and wrote JavaScript to dynamically change the images and text for each project, and to update the counter so the user could see which section of the project was in view and the number of sections left.</p>"
 ]
 
-let portfolio = new Project(portfolioImageContainer, portfolioTextContainer, portfolioSlideCounter, portfolioSlides, portfolioTextItems);
+let portfolio = new Project("portfolio", portfolioImageContainer, portfolioTextContainer, portfolioSlideCounter, portfolioSlides, portfolioTextItems);
 
 portfolio.showSlides();
 
@@ -69,10 +124,11 @@ const weatherImageContainer = document.getElementById("weather-slides");
 const weatherTextContainer = document.getElementById("weather-text");const weatherSlideCounter = document.getElementById("weather-slide-counter");
 
 const weatherSlides = [
-    "images/work-images/weather/part1.png", 
-    "images/work-images/weather/part2.png", 
-    "images/work-images/weather/part3.png"
+    ["images/work-images/weather/part1.png"], 
+    ["images/work-images/weather/part2.png"], 
+    ["images/work-images/weather/part3.png"]
 ];
+
 
 const weatherTextItems = [
     "<p>The task was to create a python program that could process a json file containing weather predictions and historical weather data.</p><p>Part 1 required us to extract the required predictions, format them to pass the tests, and output the formatted information into a new text file.</p>",
@@ -81,59 +137,9 @@ const weatherTextItems = [
 ];
 
 
-let weather = new Project(weatherImageContainer, weatherTextContainer, weatherSlideCounter, weatherSlides, weatherTextItems)
+let weather = new Project("python weather application", weatherImageContainer, weatherTextContainer, weatherSlideCounter, weatherSlides, weatherTextItems);
 
-weather.showSlides()
+weather.showSlides();
 
-console.log("portfolio: ", portfolio)
-console.log("weather: ", weather)
-
-// let index = 0;
-
-// showSlides(index, "portfolio");
-// showSlides(index, "weather");
-
-// Next/previous controls
-// function nextSlide(project) {
-    
-//     if (index + 1 >= slides.length) {
-//         index = 0;
-//     }
-//     else {
-//         index += 1 ;
-//     }
-//     console.log("current index = ", index);
-//     showSlides(index, projectImageContainer);  
-// }
-
-// function prevSlide(project) {
-//     if (index - 1 < 0) {
-//         index = slides.length - 1;
-//     }
-//     else {
-//         index -= 1 ;
-//     }
-//     console.log("current index = ", index);
-//     showSlides(index, project);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n, project) {
-//   showSlides(index = n, project);
-// }
-
-// function showSlides(n, imageContainer, textContainer) {
-//         imageContainer.src = slides[n];
-// }
-    
-    
-
-//   var i;
-  
-//   var dots = document.getElementsByClassName("dot");
-
-//   for (let i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   dots[index-1].className += " active";
-// } 
+console.log("portfolio: ", portfolio);
+console.log("weather: ", weather);
