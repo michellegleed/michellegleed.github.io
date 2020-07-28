@@ -790,6 +790,13 @@ div#homepage-content {
         grid-column: 11/13;
     }
 
+    .work-img-left-arrow i,
+    .work-img-right-arrow i {
+        color: rgba(255,255,255,.75);
+        font-size: 36px;
+    }
+
+
     img.work-item-img {
         max-height: 48vh;
     }
@@ -988,11 +995,18 @@ div#homepage-content {
 
     .work-img-left-arrow {
         grid-column: 1/2;
-        text-align: right;
+        justify-self: flex-end;
     }
 
     .work-img-right-arrow {
         grid-column: 7/8;
+        justify-self: flex-start;
+    }
+
+    .work-img-left-arrow i,
+    .work-img-right-arrow i {
+        color: #343434;
+        font-size: 32px;
     }
 
     .work-item-slide-counter {
