@@ -136,7 +136,7 @@ div#menu-right a:hover,
 #homepage-nav-bar div#menu-left a:hover,
 #homepage-nav-bar div#menu-right a:hover,
 nav.active div.menu-icon i:hover,
-div#socials a:hover,
+div.socials a:hover,
 div.form-item button:hover {
     color: #ff0b71;
     border-color: #ff0b71;
@@ -156,8 +156,8 @@ div.form-item button:hover {
     font-weight: normal;
 }
 
-div#socials i:hover,
-div#socials a:hover {
+div.socials i:hover,
+div.socials a:hover {
     transform: scale(1.4);
 }
 
@@ -172,12 +172,12 @@ footer {
     align-items: center;
 }
 
-div#socials {
+div.socials {
     padding: 12px 24px 6px 24px;
     text-align: left;
 }
   
-div#socials a {
+div.socials a {
     margin-right: 18px;
     color: #bbb;
     font-size: 19px;
@@ -898,6 +898,10 @@ div#homepage-content {
     div#homepage-text {
         margin-left: 64px;
         justify-content: flex-start;
+    }
+
+    div#homepage-socials {
+        margin-top: -84px;
     }
 
 }
