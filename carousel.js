@@ -40,19 +40,16 @@ class Project {
         let imgContainerHtml = ""
         const imgToShow = this.images[this.index];
 
-        // for (let i=0; i < imgToShow.length; i++) {
-        //     imgContainerHtml += `<img class="work-item-img img-size-${imgToShow[i].size}" src="${imgToShow[i].src}" alt="${this.name}." />`
-        // }    
         
         for (let i=0; i < imgToShow.length; i++) {
             imgContainerHtml += `<img class="work-item-img" src="${imgToShow[i]}" alt="${this.name}." />`
         }
 
         console.log("new inner html is: ", imgContainerHtml);
-
-        // this.imageContainer.src = this.images[this.index];
+ 
         this.textContainer.innerHTML = this.textItems[this.index];
         this.imageContainer.innerHTML = imgContainerHtml;
+
         let counter = `${this.index + 1}/${this.images.length}`;
         this.counterContainer.innerHTML = counter;
     }  
@@ -69,53 +66,15 @@ const portfolioSlides = [
     ["images/work-images/portfolio/ipad-work.png", "images/work-images/portfolio/ipad-work2.png"]
 ];
 
-// const portfolioSlides = [
-//     [
-//         {
-//             size: "desktop",
-//             src: "images/work-images/portfolio/index.png"
-//         }
-//     ], 
-//     [
-//         {
-//             size: "ipad",
-//             src: "images/work-images/portfolio/ipad-bio.png"
-//         },
-//         {
-//             size: "ipad",
-//             src: "images/work-images/portfolio/ipad-contact.png"
-//         }
-//     ],
-//     [
-//         {
-//             size: "mob",
-//             src: "images/work-images/portfolio/mob-index.png"
-//         },
-//         {
-//             size: "mob",
-//             src: "images/work-images/portfolio/mob-menu.png"
-//         }
-//     ],
-//     [
-//         {
-//             size: "ipad",
-//             src: "images/work-images/portfolio/ipad-work.png"
-//         },
-//         {
-//             size: "ipad",
-//             src: "images/work-images/portfolio/ipad-work2.png"
-//         },
-//     ]
-// ];
 
 const portfolioTextItems = [
-    "<p>The task was to create this portfolio website to showcase the projects that we complete throughout the SheCodes course. We were required to have a minimum of two pages in our website and to use media queries in this project.</p>",
-    "<p>I sketched out wireframes on paper and then designed my portfolio in AdobeXD. I used several of my own photographs throughout the site. I styled the pages using Flexbox and CSS grid.</p>",
+    "<p>The task was to create this portfolio website to showcase the projects that we complete throughout the SheCodes course.</p> <p>We were required to have a minimum of two pages in our website and to use media queries in this project.</p>",
+    "<p>I sketched out wireframes on paper and then designed my portfolio in AdobeXD.</p> <p>I used several of my own photographs throughout the site.</p> <p>I styled the pages using Flexbox and CSS grid.</p>",
     "<p>I created a simple menu for mobile-sized screens using JavaScript.</p>", 
-    "<p>I added arrow button icons and wrote JavaScript to dynamically change the images and text for each project, and to update the counter so the user could see which section of the project was in view and the number of sections left.</p>"
+    "<p>I added arrow button icons and used JavaScript to dynamically change the images and text for each project, and to update the counter so the user can see which section of the project is in view and the number of sections left.</p>"
 ]
 
-let portfolio = new Project("portfolio", portfolioImageContainer, portfolioTextContainer, portfolioSlideCounter, portfolioSlides, portfolioTextItems);
+let portfolio = new Project("Portfolio", portfolioImageContainer, portfolioTextContainer, portfolioSlideCounter, portfolioSlides, portfolioTextItems);
 
 portfolio.showSlides();
 
@@ -137,9 +96,6 @@ const weatherTextItems = [
 ];
 
 
-let weather = new Project("python weather application", weatherImageContainer, weatherTextContainer, weatherSlideCounter, weatherSlides, weatherTextItems);
+let weather = new Project("Python Weather Application", weatherImageContainer, weatherTextContainer, weatherSlideCounter, weatherSlides, weatherTextItems);
 
 weather.showSlides();
-
-console.log("portfolio: ", portfolio);
-console.log("weather: ", weather);
