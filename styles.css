@@ -153,6 +153,7 @@ div#menu-right a:hover,
 #homepage-nav-bar div#menu-right a:hover,
 div.form-item button:hover {
     transform: scale(1.2);
+    font-weight: normal;
 }
 
 div#socials i:hover,
