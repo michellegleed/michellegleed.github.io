@@ -124,3 +124,29 @@ const creloTextItems = [
 let crelo = new Project("Crelo Application", creloImageContainer, creloTextContainer, creloSlideCounter, creloSlides, creloTextItems);
 
 crelo.showSlides();
+
+
+const bucksImageContainer = document.getElementById("bucks-slides");
+const bucksTextContainer = document.getElementById("bucks-text"); const bucksSlideCounter = document.getElementById("bucks-slide-counter");
+
+const bucksSlides = [
+    ["images/work-images/bucks/part1.png"],
+    ["images/work-images/bucks/part2.png"],
+    ["images/work-images/bucks/part3.png"],
+    ["images/work-images/bucks/part4.png"],
+    ["images/work-images/bucks/part5.png"]
+];
+
+
+const bucksTextItems = [
+    "<p>This was a group project. The task was to create a web app that splits income into different accounts or ‘buckets’ according to designated percentages pre-defined by the user. Every transaction is saved to the user’s transaction history list. Buckets can be added, updated, and deleted by the user, and buckets can have their proportion of the funds further split into child buckets.</p>",
+    "<h4>The Stack</h4><ul><li>The API was written in Python using Django Rest Framework</li><li>The Front End was written using React JS</li><li>The database was PostgreSQL</li><li>This project was deployed to Heroku</li></ul>",
+    "<h4>API Features</h4><ul><li>A recursive serialiser was used to serve nested JSON with children buckets listed inside the parent bucket object</li><li>Transaction model has a receipt field which is a JSON field. This allows us to do all the calculations on the front end before the API stores the transaction instance (instead of storing the instance first, running the calculations and sending this info back to front-end to be displayed).</li></ul><br/><p>This API design resulted in a faster, more responsive front-end and a better user experience.</p>",
+    "<h4>Front-End Features</h4><ul><li>User can edit all their buckets at once and the app will check that all bucket percentages add to 100% before posting the transaction record to the API</li><li>User can add icons to buckets to help with quick identification</li><li>Shows a list of all saved transactions by date - user can view the details of any transaction and delete the record if they choose</li><li> Menu links change whether user is/isn’t logged in</li></ul>",
+    "<p>Our client needed to be able assign her regular monthly expenses to the relevant buckets. These expenses were then used to calculate the minimum required amount that should be put into each bucket to cover her expenses.</p><p>Upon entering a value into the income field, funds are automatically distributed into the buckets and a warning message displays if the amount in the bucket is less than the minimum required amount.</p>"
+];
+
+
+let bucks = new Project("Bucks Buckets Application", bucksImageContainer, bucksTextContainer, bucksSlideCounter, bucksSlides, bucksTextItems);
+
+bucks.showSlides();
