@@ -75,6 +75,10 @@ button {
   font-size: 24px;
 }
 
+div ul.work-item-list {
+  text-align: left;
+}
+
 nav.nav-bar {
   display: none;
 }
@@ -1095,6 +1099,10 @@ div#homepage-content {
   div.work-item-text h4 {
     grid-row: 2/3;
     grid-column: 4/8;
+  }
+
+  div.work-item-text h4.left-align {
+    text-align: left;
   }
 
   div.work-item-description {

@@ -114,8 +114,8 @@ const creloSlides = [
 
 const creloTextItems = [
     "<p>The task was to design, build and deploy a crowdfunding website. Instead of creating a site that only catered to a particular type of project, I decided it could be useful to make it open to all kinds of projects organised by location (local shires), so users only see the projects happening in their local area.</p>",
-    "<h3>The Stack</h3><br/><ul><li>The API was written in Python using Django Rest Framework</li><li>The Front End was written using React JS</li><li>The database was PostgreSQL</li><li>This project is deployed to Heroku</li></ul>",
-    "<p>I used Django Signals to create a location-based news feed that automatically generates content whenever one of the following activities occured... <ul><li>Project created</li><li>Progress update added to an existing project</li><li>A funding milestone was reached - 25%, 50%, 75% and 100% of the project goal</li><li>A project was within five days of it's closing date</li></ul></p>",
+    "<h4 class='left-align'>The Stack</h4><br/><ul class='work-item-list'><li>The API was written in Python using Django Rest Framework</li><li>The Front End was written using React JS</li><li>The database was PostgreSQL</li><li>This project is deployed to Heroku</li></ul>",
+    "<p>I used Django Signals to create a location-based news feed that automatically generates content whenever one of the following activities occured... <ul class='work-item-list'><li>Project created</li><li>Progress update added to an existing project</li><li>A funding milestone was reached - 25%, 50%, 75% and 100% of the project goal</li><li>A project was within five days of it's closing date</li></ul></p>",
     "<p>On the profile page, users can view their pledge history, update their username and bio, and change their location.</p> <p>As this website shows local projects, changing a user's location will change the projects in their news feed and the 'Browse by Category' page.</p>",
     "<p>I added a 'snoop' button to the news feed which allows users to browse projects by location. This allows them to see open projects posted to locations other than the location they've set in their profile.</p>"
 ];
@@ -140,9 +140,9 @@ const bucksSlides = [
 
 const bucksTextItems = [
     "<p>This was a group project. The task was to create a web app that splits income into different accounts or ‘buckets’ according to designated percentages pre-defined by the user. Every transaction is saved to the user’s transaction history list. Buckets can be added, updated, and deleted by the user, and buckets can have their proportion of the funds further split into child buckets.</p>",
-    "<h4>The Stack</h4><ul><li>The API was written in Python using Django Rest Framework</li><li>The Front End was written using React JS</li><li>The database was PostgreSQL</li><li>This project was deployed to Heroku</li></ul>",
-    "<h4>API Features</h4><ul><li>A recursive serialiser was used to serve nested JSON with children buckets listed inside the parent bucket object</li><li>Transaction model has a receipt field which is a JSON field. This allows us to do all the calculations on the front end before the API stores the transaction instance (instead of storing the instance first, running the calculations and sending this info back to front-end to be displayed).</li></ul><br/><p>This API design resulted in a faster, more responsive front-end and a better user experience.</p>",
-    "<h4>Front-End Features</h4><ul><li>User can edit all their buckets at once and the app will check that all bucket percentages add to 100% before posting the transaction record to the API</li><li>User can add icons to buckets to help with quick identification</li><li>Shows a list of all saved transactions by date - user can view the details of any transaction and delete the record if they choose</li><li> Menu links change whether user is/isn’t logged in</li></ul>",
+    "<h4  class='left-align'>The Stack</h4><ul class='work-item-list'><li>The API was written in Python using Django Rest Framework</li><li>The Front End was written using React JS</li><li>The database was PostgreSQL</li><li>This project was deployed to Heroku</li></ul>",
+    "<h4 class='left-align'>API Features</h4><ul class='work-item-list'><li>A recursive serialiser was used to serve nested JSON with children buckets listed inside the parent bucket object</li><li>Transaction model has a receipt field which is a JSON field. This allows us to do all the calculations on the front end before the API stores the transaction instance (instead of storing the instance first, running the calculations and sending this info back to front-end to be displayed).</li></ul><br/><p>This API design resulted in a faster, more responsive front-end and a better user experience.</p>",
+    "<h4 class='left-align'>Front-End Features</h4><ul class='work-item-list'><li>User can edit all their buckets at once and the app will check that all bucket percentages add to 100% before posting the transaction record to the API</li><li>User can add icons to buckets to help with quick identification</li><li>Shows a list of all saved transactions by date - user can view the details of any transaction and delete the record if they choose</li><li> Menu links change whether user is/isn’t logged in</li></ul>",
     "<p>Our client needed to be able assign her regular monthly expenses to the relevant buckets. These expenses were then used to calculate the minimum required amount that should be put into each bucket to cover her expenses.</p><p>Upon entering a value into the income field, funds are automatically distributed into the buckets and a warning message displays if the amount in the bucket is less than the minimum required amount.</p>"
 ];
 
@@ -150,3 +150,25 @@ const bucksTextItems = [
 let bucks = new Project("Bucks Buckets Application", bucksImageContainer, bucksTextContainer, bucksSlideCounter, bucksSlides, bucksTextItems);
 
 bucks.showSlides();
+
+
+const newsImageContainer = document.getElementById("news-slides");
+const newsTextContainer = document.getElementById("news-text"); const newsSlideCounter = document.getElementById("news-slide-counter");
+
+const newsSlides = [
+    ["images/work-images/news/part1.png"],
+    ["images/work-images/news/part2.png"],
+    ["images/work-images/news/part3.png"]
+];
+
+
+const newsTextItems = [
+    "<p>The task was to create a newspaper app using the Django framework. This was my first introduction to Django.</p>",
+    "<h4 class='left-align'>Django Features</h4><ul class='work-item-list'> <li>Category View filters stories by categories and can either show all stories in a user’s list of favourite categories or show all stories from a single category</li> <li>Used Django templating syntax to create web pages</li> <li>Wrote views to interact with the templates and SQL database</li> <li>User must be logged in to publish a story</li> <li>Used Django Authentication System (django.contrib.auth) to authenticate users</li></ul>",
+    "<h4 class='left-align'>User Centered Features</h4><ul class='work-item-list'> <li>Users can edit their followed categories list</li> <li>Update their profile page</li> <li>Publish a story</li></ul>"
+];
+
+
+let news = new Project("She Codes News Application", newsImageContainer, newsTextContainer, newsSlideCounter, newsSlides, newsTextItems);
+
+news.showSlides();
