@@ -428,6 +428,11 @@ div.work-item-background h5 {
   align-self: flex-end;
 }
 
+div.image-carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
 img.work-item-img {
   width: calc(100vw - 10px);
   height: auto;
@@ -435,6 +440,12 @@ img.work-item-img {
   border: solid 5px #333;
   max-width: 400px;
   align-self: center;
+}
+
+#crelo-ios-slides .work-item-img {
+  width: auto;
+  max-width: 30%;
+  margin: 0 8px;
 }
 
 div.work-item-text {
@@ -639,6 +650,7 @@ div#homepage-content {
     grid-row: 2/7;
     justify-self: center;
     display: flex;
+    justify-content: center;
   }
 
   /* div.sml-screen {
@@ -671,6 +683,12 @@ div#homepage-content {
     width: auto;
     max-width: 90%;
     margin: 0 8px;
+  }
+
+  #crelo-ios-slides .work-item-img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
   }
 
   div.work-item-background h5 {

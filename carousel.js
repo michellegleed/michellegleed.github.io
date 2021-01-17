@@ -172,3 +172,26 @@ const newsTextItems = [
 let news = new Project("She Codes News Application", newsImageContainer, newsTextContainer, newsSlideCounter, newsSlides, newsTextItems);
 
 news.showSlides();
+
+
+const creloIOSImageContainer = document.getElementById("crelo-ios-slides");
+const creloIOSTextContainer = document.getElementById("crelo-ios-text");
+const creloIOSSlideCounter = document.getElementById("crelo-ios-slide-counter");
+
+const creloIOSSlides = [
+    ["images/work-images/crelo-ios/news1.png", "images/work-images/crelo-ios/project.png"],
+    ["images/work-images/crelo-ios/news2.png", "images/work-images/crelo-ios/profile.png"],
+    ["images/work-images/crelo-ios/create.png", "images/work-images/crelo-ios/pledge.png"]
+];
+
+
+const creloIOSTextItems = [
+    "<p>The task was to create an iOS13 app to interact with my Crelo crowdfunding API. I had used Swift and UIKit before, but I had to learn the SwiftUI framework to create this app.</p> <p>In terms of design, the app was to look as similar as possible to the React web app I had recently built whilst conforming to Apple's Human Interface Guidelines. It also needed to support the same features as the Crelo React app.</p>",
+    "<h4>Features</h4><p>Tab bar navigation to easily switch between different parts of the app.</p><p>Custom-coded horizontal scroll navigation bar containing buttons at top of screen to enable fast navigation to pages within each tab section.</p>",
+    "<p>The iOS app was designed with SwiftUI to mimic the appearance of the mobile version of my Crelo React web app. Keeping the design similar across both apps helped to establish a brand and recognisable theme for Crelo. It also allowed me to focus on learning how to use SwiftUI to achieve a pre-determined design.</p>"
+];
+
+
+let creloIOS = new Project("Crelo iOS Application", creloIOSImageContainer, creloIOSTextContainer, creloIOSSlideCounter, creloIOSSlides, creloIOSTextItems);
+
+creloIOS.showSlides();

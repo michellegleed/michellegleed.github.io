@@ -49,37 +49,45 @@
             <div class="work-item-text">
                 <h2>Crowdfunding App</h2>
                 <div class="work-item-link-container">
-                    <a class="work-item-link" href="https://shielded-cliffs-60368.herokuapp.com/" target="blank">Launch Website >></a>
+                    <a class="work-item-link" href="https://shielded-cliffs-60368.herokuapp.com/" target="blank">Launch
+                        Website >></a>
                 </div>
                 <h4>Skills: Django Rest Framework, React JS, Adobe XD</h4>
                 <div class="work-item-description med-screen" id="crelo-text">
                 </div>
                 <div class="work-item-description sml-screen">
-                    <p>The task was to design, build and deploy a crowdfunding website. Instead of creating a site that only catered to a particular type of project, I decided it could be useful to make it open to all kinds of projects organised by location (local shires), so users only see the projects happening in their local area.</p>
+                    <p>The task was to design, build and deploy a crowdfunding website. Instead of creating a site that
+                        only catered to a particular type of project, I decided it could be useful to make it open to
+                        all kinds of projects organised by location (local shires), so users only see the projects
+                        happening in their local area.</p>
                     <h4>The Stack</h4>
                     <ul>
-                    <li>The API was written in Python using Django Rest Framework</li>
-                    <li>The Front End was written using React JS</li>
-                    <li>The database was PostgreSQL</li>
-                    <li>This project was deployed to Heroku</li>
-                </ul>
+                        <li>The API was written in Python using Django Rest Framework</li>
+                        <li>The Front End was written using React JS</li>
+                        <li>The database was PostgreSQL</li>
+                        <li>This project was deployed to Heroku</li>
+                    </ul>
                     <h4>Features</h4>
-                    <p>I created a location-based news feed that automatically generates content whenever one of the following activities occured... 
-                            <ul>
-                            <li>Project created</li>
-                            <li>Progress update added to an existing project</li>
-                            <li>A funding milestone was reached - 25%, 50%, 75% and 100% of the project goal</li>
-                            <li>A project was within five days of it's closing date</li>
-                        </ul>
+                    <p>I created a location-based news feed that automatically generates content whenever one of the
+                        following activities occured...
+                    <ul>
+                        <li>Project created</li>
+                        <li>Progress update added to an existing project</li>
+                        <li>A funding milestone was reached - 25%, 50%, 75% and 100% of the project goal</li>
+                        <li>A project was within five days of it's closing date</li>
+                    </ul>
                     </p>
                     <p></p>
-                    <p>On the profile page, users can view their pledge history, update their username and bio, and change their location. As this website shows local projects, changing a user's location will change the projects in their news feed and the 'Browse by Category' page.</p>
-                    <p>I added a "snoop" button to the news feed which allows users to browse projects by location. This allows them to see open projects posted to locations other than the location they've set in their profile.</p>
+                    <p>On the profile page, users can view their pledge history, update their username and bio, and
+                        change their location. As this website shows local projects, changing a user's location will
+                        change the projects in their news feed and the 'Browse by Category' page.</p>
+                    <p>I added a "snoop" button to the news feed which allows users to browse projects by location. This
+                        allows them to see open projects posted to locations other than the location they've set in
+                        their profile.</p>
                 </div>
                 <p class="work-item-slide-counter" id="crelo-slide-counter"></p>
             </div>
         </div>
-
 
         <div class="work-item-div">
             <div class="work-item-background">
@@ -92,13 +100,18 @@
             <div class="work-item-text">
                 <h2>Income Splitting App</h2>
                 <div class="work-item-link-container">
-                    <a class="work-item-link" href="https://morning-escarpment-12522.herokuapp.com/home" target="blank">Launch Website >></a>
+                    <a class="work-item-link" href="https://morning-escarpment-12522.herokuapp.com/home"
+                        target="blank">Launch Website >></a>
                 </div>
                 <h4>Skills: Django Rest Framework, React JS</h4>
                 <div class="work-item-description med-screen" id="bucks-text">
                 </div>
                 <div class="work-item-description sml-screen">
-                    <p>This was a group project. The task was to create a web app that splits income into different accounts or ‘buckets’ according to designated percentages pre-defined by the user. Every transaction is saved to the user’s transaction history list. Buckets can be added, updated, and deleted by the user, and buckets can have their proportion of the funds further split into child buckets.</p>
+                    <p>This was a group project. The task was to create a web app that splits income into different
+                        accounts or ‘buckets’ according to designated percentages pre-defined by the user. Every
+                        transaction is saved to the user’s transaction history list. Buckets can be added, updated, and
+                        deleted by the user, and buckets can have their proportion of the funds further split into child
+                        buckets.</p>
                     <h4>The Stack</h4>
                     <ul>
                         <li>The API was written in Python using Django Rest Framework</li>
@@ -108,22 +121,64 @@
                     </ul>
                     <h4>API Features</h4>
                     <ul>
-                        <li>A recursive serialiser was used to serve nested JSON with children buckets listed inside the parent bucket object</li>
-                        <li>Transaction model has a receipt field which is a JSON field. This allows us to do all the calculations on the front end before the API stores the transaction instance (instead of storing the instance first, running the calculations and sending this info back to front-end to be displayed).</li> 
+                        <li>A recursive serialiser was used to serve nested JSON with children buckets listed inside the
+                            parent bucket object</li>
+                        <li>Transaction model has a receipt field which is a JSON field. This allows us to do all the
+                            calculations on the front end before the API stores the transaction instance (instead of
+                            storing the instance first, running the calculations and sending this info back to front-end
+                            to be displayed).</li>
                     </ul>
-                    <p>The result of this API design was a faster, more responsive front-end and better experience for the user.</p>
+                    <p>The result of this API design was a faster, more responsive front-end and better experience for
+                        the user.</p>
                     <h4>Front-End Features</h4>
-                            <ul>
-                            <li>User can edit all their buckets at once and the app will check that all bucket percentages add to 100% before posting the transaction record to the API</li>
-                            <li>User can add icons to buckets to help with quick identification</li>
-                            <li>Shows a list of all saved transactions by date - user can view the details of any transaction and delete the record if they choose</li>
-                            <li> Menu links change whether user is/isn’t logged in</li>
-                        </ul>
-                        <h4>Handling Monthly Expenses</h4>
-                    <p>Our client needed to be able assign her regular monthly expenses to the relevant buckets. These expenses were then used to calculate the minimum required amount that should be put into each bucket to cover her expenses.</p>
-                    <p>Upon entering a value into the income field, the app automatically begins to distribute the money into the buckets and shows a warning message if the amount in the bucket is less than the minimum required amount.</p>
+                    <ul>
+                        <li>User can edit all their buckets at once and the app will check that all bucket percentages
+                            add to 100% before posting the transaction record to the API</li>
+                        <li>User can add icons to buckets to help with quick identification</li>
+                        <li>Shows a list of all saved transactions by date - user can view the details of any
+                            transaction and delete the record if they choose</li>
+                        <li> Menu links change whether user is/isn’t logged in</li>
+                    </ul>
+                    <h4>Handling Monthly Expenses</h4>
+                    <p>Our client needed to be able assign her regular monthly expenses to the relevant buckets. These
+                        expenses were then used to calculate the minimum required amount that should be put into each
+                        bucket to cover her expenses.</p>
+                    <p>Upon entering a value into the income field, the app automatically begins to distribute the money
+                        into the buckets and shows a warning message if the amount in the bucket is less than the
+                        minimum required amount.</p>
                 </div>
                 <p class="work-item-slide-counter" id="bucks-slide-counter"></p>
+            </div>
+        </div>
+
+        <div class="work-item-div">
+            <div class="work-item-background">
+                <p class="work-img-left-arrow" onclick="creloIOS.prevSlide()"><i class="fas fa-chevron-left"></i></p>
+                <div class="image-carousel-container" id="crelo-ios-slides">
+                </div>
+                <p class="work-img-right-arrow" onclick="creloIOS.nextSlide()"><i class="fas fa-chevron-right"></i></p>
+                <h5>12-2020</h5>
+            </div>
+            <div class="work-item-text">
+                <h2>Crowdfunding iOS App</h2>
+                <h4>Skills: SwiftUI, Adobe XD</h4>
+                <div class="work-item-description med-screen" id="crelo-ios-text">
+                </div>
+                <div class="work-item-description sml-screen">
+                    <p>The task was to create an iOS13 app to interact with my Crelo crowdfunding API. I had used Swift and UIKit before, but I had to learn the SwiftUI framework to create this app. In terms of design, the app was to look as similar as possible to the React web app I had recently built whilst conforming to Apple's Human Interface Guidelines. It also needed to support the same features as the Crelo React app.</p>
+                    <h4>Features</h4>
+                    <p>Tab bar navigation to easily switch between different parts of the app.
+                    </p>
+                    <p>Custom-coded horizontal scroll navigation bar containing buttons at top of screen to enable fast navigation to pages within each tab section.</p>
+                    <h4>The Stack</h4>
+                    <ul>
+                        <li>The API was written in Python using Django Rest Framework</li>
+                        <li>The API was deployed to Heroku</li>
+                        <li>The iOS app was written using Swift and the SwiftUI framework</li>
+                    </ul>
+                    <p>The app was designed with SwiftUI to mimic the appearance of the mobile version of my Crelo React web app. Keeping the design similar across both apps helped to establish a brand and recognisable theme for Crelo. It also allowed me to focus on learning how to use SwiftUI to achieve a pre-determined design.</p>
+                </div>
+                <p class="work-item-slide-counter" id="crelo-ios-slide-counter"></p>
             </div>
         </div>
 
@@ -143,10 +198,12 @@
                 <div class="work-item-description med-screen" id="news-text">
                 </div>
                 <div class="work-item-description sml-screen">
-                    <p>The task was to create a newspaper app using the Django framework. This was my first introduction to Django.</p>
+                    <p>The task was to create a newspaper app using the Django framework. This was my first introduction
+                        to Django.</p>
                     <h4>Django Features</h4>
                     <ul>
-                        <li>Category View filters stories by categories and can either show all stories in a user’s list of favourite categories or show all stories from a single category</li>
+                        <li>Category View filters stories by categories and can either show all stories in a user’s list
+                            of favourite categories or show all stories from a single category</li>
                         <li>Used Django templating syntax to create web pages</li>
                         <li>Wrote views to interact with the templates and SQL database</li>
                         <li>User must be logged in to publish a story</li>
@@ -156,7 +213,7 @@
                     <ul>
                         <li>Users can edit their followed categories list</li>
                         <li>Update their profile page</li>
-                        <li>Publish a story</li>>
+                        <li>Publish a story</li>
                     </ul>
                 </div>
                 <p class="work-item-slide-counter" id="news-slide-counter"></p>
@@ -178,10 +235,15 @@
                 <div class="work-item-description med-screen" id="weather-text">
                 </div>
                 <div class="work-item-description sml-screen">
-                    <p>The task was to create a python program that could process a json file containing weather predictions and historical weather data.</p>
-                    <p>Part 1 required us to extract the required predictions, format them to pass the tests, and output the formatted information into a new text file.</p>
-                    <p>Part 2 required the program to output graphs of the temperature readings and the incidence of particular weather events from json data containing historical weather measurements.</p>
-                    <p>Part 3 was an optional challenge which I chose to complete. It required the program to extract certain data from the json file, format the data and generate graphs and formatted text files.</p>
+                    <p>The task was to create a python program that could process a json file containing weather
+                        predictions and historical weather data.</p>
+                    <p>Part 1 required us to extract the required predictions, format them to pass the tests, and output
+                        the formatted information into a new text file.</p>
+                    <p>Part 2 required the program to output graphs of the temperature readings and the incidence of
+                        particular weather events from json data containing historical weather measurements.</p>
+                    <p>Part 3 was an optional challenge which I chose to complete. It required the program to extract
+                        certain data from the json file, format the data and generate graphs and formatted text files.
+                    </p>
                 </div>
                 <p class="work-item-slide-counter" id="weather-slide-counter"></p>
             </div>
@@ -204,14 +266,18 @@
                 </div>
                 <div class="work-item-description sml-screen">
                     <p>The task was to create this portfolio website to showcase the projects that we complete
-                    throughout the SheCodes course. We were required to have a minimum of two pages in our website and to use media queries in this project.</p>
-                    <p>I styled the pages using Flexbox and CSS grid. I created a simple menu for mobile-sized screens using JavaScript.</p>
-                    <p>For larger screen sizes, I added arrow button icons and used JavaScript to dynamically change the images and text for each project. The script also updates the counter so the user can see which section of the project is currently in view and the number of sections left.</p>
+                        throughout the SheCodes course. We were required to have a minimum of two pages in our website
+                        and to use media queries in this project.</p>
+                    <p>I styled the pages using Flexbox and CSS grid. I created a simple menu for mobile-sized screens
+                        using JavaScript.</p>
+                    <p>For larger screen sizes, I added arrow button icons and used JavaScript to dynamically change the
+                        images and text for each project. The script also updates the counter so the user can see which
+                        section of the project is currently in view and the number of sections left.</p>
                 </div>
                 <p class="work-item-slide-counter" id="portfolio-slide-counter"></p>
             </div>
         </div>
-        
+
 
         <footer>
             <div class="socials">
