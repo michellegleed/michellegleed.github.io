@@ -65,6 +65,10 @@ p {
   font-size: 19px;
 }
 
+li {
+  margin: 0 24px 0 0;
+}
+
 a {
   font-size: 18px;
   text-decoration: none;
@@ -452,6 +456,26 @@ div.work-item-text {
   margin: 36px 0;
 }
 
+div.work-item-description p,
+div.work-item-description li {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+div.work-item-description p {
+  text-align: justify;
+}
+
+div.sml-screen h4 {
+  margin-top: 36px;
+}
+
+div.sml-screen p,
+div.sml-screen ul {
+  margin-bottom: 24px;
+}
+
 .work-item-link {
   margin: 4px 24px;
   font-size: 12px;
@@ -710,7 +734,13 @@ div#homepage-content {
   }
 
   div.work-item-description p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  div.work-item-description li {
+    font-size: 16px;
+    line-height: 26px;
   }
 
   div#homepage-img-div {
@@ -1023,6 +1053,10 @@ div#homepage-content {
     align-items: flex-start;
   }
 
+  div#work-page-container .work-item-link-container {
+    margin: 0;
+  }
+
   /* div#work-page-container .work-item-link-container {
     justify-content: flex-end;
   }
@@ -1154,10 +1188,10 @@ div#homepage-content {
     margin: 12px 24px;
   }
 
-  div.work-item-description p {
+  /* div.work-item-description p,
+  div.work-item-description li {
     margin: 0 0 18px 24px;
-    font-size: 19px;
-  }
+  } */
 
   footer {
     background-color: #fff;
@@ -1238,10 +1272,6 @@ div#homepage-content {
 }
 
 @media (min-width: 1020px) {
-  div.work-item-description p {
-    font-size: 22px;
-  }
-
   div#contact-page-container {
     height: 100vh;
     padding: 0 5vw;
