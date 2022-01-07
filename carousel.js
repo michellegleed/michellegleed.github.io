@@ -195,3 +195,27 @@ const creloIOSTextItems = [
 let creloIOS = new Project("Crelo iOS Application", creloIOSImageContainer, creloIOSTextContainer, creloIOSSlideCounter, creloIOSSlides, creloIOSTextItems);
 
 creloIOS.showSlides();
+
+
+const aussieFitImageContainer = document.getElementById("aussieFit-slides");
+const aussieFitTextContainer = document.getElementById("aussieFit-text"); const aussieFitSlideCounter = document.getElementById("aussieFit-slide-counter");
+
+const aussieFitSlides = [
+    ["images/work-images/aussie-fit/part2a.png", "images/work-images/aussie-fit/part2b.png"],
+    ["images/work-images/aussie-fit/part1a.png", "images/work-images/aussie-fit/part1b.png"],
+    ["images/work-images/aussie-fit/part3.png"],
+    ["images/work-images/aussie-fit/part4.png"]
+];
+
+
+const aussieFitTextItems = [
+    "<p>The task was to create an attendance app for Curtin's aussieFit study. Participants were put into groups and required to attend workshops and exercise sessions at WAFL football clubs in Perth. The academics running the project needed a simple, secure way for the participants to sign in to each session.</p>",
+    "<h4>Features</h4><ul><li>Participants scan a QR code to reach the sign-in page for their team</li><li>Attendance can only be registered from one hour prior to a class's start time</li><li>API automatically marks participants as absent if their attendance is not recorded by the end of the session</li><li>Admin dashboard to create and manage groups, manage participants, schedule workshops, and add/edit screening questions</li><li>Participants can only see the attendance list for their own group to ensure privacy for participants of other groups. This web app is also password protected.</li></ul>",
+    "<p>The academics needed to download the attendance data as part of their analysis. I created a route on the backend that uses Python's CSV library to process the attendance data into a csv file.</p>",
+    "<p>I created a basic dashboard for the academics to use to add teams of participants, schedule, edit, and delete classes and edit participants' attendance manually if required.</p>"
+];
+
+
+let aussieFit = new Project("Python AussieFit Application", aussieFitImageContainer, aussieFitTextContainer, aussieFitSlideCounter, aussieFitSlides, aussieFitTextItems);
+
+aussieFit.showSlides();

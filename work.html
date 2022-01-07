@@ -37,7 +37,6 @@
 
         <h1 id="page-title">My Work</h1>
 
-
         <div class="work-item-div">
             <div class="work-item-background">
                 <p class="work-img-left-arrow" onclick="crelo.prevSlide()"><i class="fas fa-chevron-left"></i></p>
@@ -86,6 +85,47 @@
                         their profile.</p>
                 </div>
                 <p class="work-item-slide-counter" id="crelo-slide-counter"></p>
+            </div>
+        </div>
+
+        <div class="work-item-div">
+            <div class="work-item-background">
+                <p class="work-img-left-arrow" onclick="aussieFit.prevSlide()"><i class="fas fa-chevron-left"></i></p>
+                <div class="image-carousel-container" id="aussieFit-slides">
+                </div>
+                <p class="work-img-right-arrow" onclick="aussieFit.nextSlide()"><i class="fas fa-chevron-right"></i></p>
+                <h5>03-2021</h5>
+            </div>
+            <div class="work-item-text">
+                <h2>AussieFit Attendance App</h2>
+                <div class="work-item-link-container">
+                    <!-- <a class="work-item-link" href="https://shielded-cliffs-60368.herokuapp.com/" target="blank">Launch
+                        Website >></a> -->
+                </div>
+                <h4>Skills: Python CSV, Django Rest Framework, React JS</h4>
+                <div class="work-item-description med-screen" id="aussieFit-text">
+                </div>
+                <div class="work-item-description sml-screen">
+                    <p>The task was to create an attendance app for Curtin's aussieFit study. Participants were put into groups and required to attend workshops and exercise sessions at WAFL football clubs in Perth. The academics running the project needed a simple, secure way for the participants to sign in to each session.</p>
+                    <!-- <h4>The Stack</h4>
+                    <ul>
+                        <li>The API was written in Python using Django Rest Framework</li>
+                        <li>The Front End was written using React JS</li>
+                        <li>The database was PostgreSQL</li>
+                        <li>This project was deployed to Heroku</li>
+                    </ul> -->
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Participants scan a QR code to reach the sign-in page for their team</li>
+                        <li>Attendance can only be registered from one hour prior to a class's start time</li>
+                        <li>API automatically marks participants as absent if their attendance is not recorded by the end of the session</li>
+                        <li>Admin dashboard to create and manage groups, manage participants, schedule workshops, and add/edit screening questions"</li>
+                        <li>Participants can only see the attendance list for their own group to ensure privacy for participants of other groups. This web app is also password protected.</li>
+                    </ul>
+                    <p>The academics needed to download the attendance data as part of their analysis. I created a route on the backend that uses Python's CSV library to process the attendance data into a csv file.</p>
+                    <p>I created a basic dashboard for the academics to use to add teams of participants, schedule, edit, and delete classes and edit participants' attendance manually if required.</p>
+                </div>
+                <p class="work-item-slide-counter" id="aussieFit-slide-counter"></p>
             </div>
         </div>
 
@@ -289,7 +329,7 @@
                 <a href="https://www.linkedin.com/in/michelle-g-3009b71a2/" target="blank"><i
                         class="fab fa-linkedin-in"></i></a>
             </div>
-            <p>Made by Michelle &copy 2021</p>
+            <p>Made by Michelle &copy 2022</p>
         </footer>
     </div>
     <script src="menu.js"></script>
