@@ -437,7 +437,7 @@ div.image-carousel-container {
   justify-content: center;
 }
 
-img.work-item-img {
+.work-item-img {
   width: calc(100vw - 10px);
   height: auto;
   background-color: #fff;
@@ -446,7 +446,7 @@ img.work-item-img {
   align-self: center;
 }
 
-#crelo-ios-slides .work-item-img {
+img.double-img {
   width: auto;
   max-width: 30%;
   margin: 0 8px;
@@ -702,7 +702,7 @@ div#homepage-content {
         grid-column: 11/13;
     } */
 
-  img.work-item-img {
+  .work-item-img {
     height: 80%;
     width: auto;
     max-width: 90%;
@@ -878,8 +878,12 @@ div#homepage-content {
     font-size: 40px;
   }
 
-  img.work-item-img {
+  .work-item-img {
     max-height: 48vh;
+  }
+
+  img.double-img {
+    max-width: unset;
   }
 
   div.work-item-background h5 {
@@ -888,7 +892,7 @@ div#homepage-content {
 }
 
 @media (min-width: 745px) and (min-height: 1020px) {
-  img.work-item-img {
+  .work-item-img {
     max-height: 35vh;
   }
 }
@@ -1090,7 +1094,7 @@ div#homepage-content {
     justify-content: center;
   }
 
-  img.work-item-img {
+  .work-item-img {
     height: auto;
     max-height: 100%;
     max-width: calc(100% - 10px);

@@ -40,10 +40,14 @@ class Project {
         let imgContainerHtml = ""
         const imgToShow = this.images[this.index];
 
-
-        for (let i = 0; i < imgToShow.length; i++) {
-            imgContainerHtml += `<img class="work-item-img" src="${imgToShow[i]}" alt="${this.name}." />`
+        if (imgToShow.length > 1) {
+            for (let i = 0; i < imgToShow.length; i++) {
+                imgContainerHtml += `<img class="work-item-img double-img" src="${imgToShow[i]}" alt="${this.name}." />`
+            }
+        } else {
+            imgContainerHtml = `<img class="work-item-img" src="${imgToShow[0]}" alt="${this.name}." />`
         }
+
 
         console.log("new inner html is: ", imgContainerHtml);
 
