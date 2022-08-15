@@ -23,4 +23,3 @@ jobs:
         build_dir: build
       env:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-        
